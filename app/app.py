@@ -38,22 +38,6 @@ from utils.config_utils import (
     STATS_EDA,
 )
 
-# st.write("🔍 DEBUG MODE — PATH CHECK")
-# st.write("📁 BASE_DIR =", BASE_DIR)
-# st.write("📁 MODEL_DIR =", MODEL_DIR)
-# st.write("📁 GB_DIR =", GB_DIR)
-# st.write("📁 KMEANS_DIR =", KMEANS_DIR)
-# st.write("📁 Current Working Directory =", os.getcwd())
-
-# try:
-#     st.write("📂 GB_DIR contents =", os.listdir(GB_DIR))
-# except Exception as e:
-#     st.error(f"❌ Cannot list GB_DIR: {e}")
-
-# try:
-#     st.write("📂 MODEL_DIR contents =", os.listdir(MODEL_DIR))
-# except Exception as e:
-#     st.error(f"❌ Cannot list MODEL_DIR: {e}")
 
 # ----------------------------------------------------------
 # 🔧 STREAMLIT-SAFE LOADER
@@ -503,21 +487,11 @@ elif page == pages[3]:
         },
     }
 
-    check_gb_models(GB_MODELS, GB_DIR)
+    # 🔧 Developer Mode (local only)
+    DEBUG = False  # Set True only on local machine
 
-
-    # # --- Load Gradient Boosting models ---
-    # loaded_gb_models = {}
-    # for species_name, paths in GB_MODELS.items():
-    #     species_models = {}
-    #     for target_name, model_path in paths.items():
-    #         try:
-    #             species_models[target_name] = joblib.load(model_path)
-    #             st.success(f"Loaded Gradient Boosting model for **{species_name}** ({target_name})")
-    #         except Exception:
-    #             species_models[target_name] = None
-    #             st.error(f"❌ Could not load Gradient Boosting {target_name} model for {species_name}")
-    #     loaded_gb_models[species_name] = species_models
+    if DEBUG:
+        check_gb_models(GB_MODELS, GB_DIR)
 
     # --- Load Gradient Boosting models ---
     loaded_gb_models = {}
@@ -531,7 +505,6 @@ elif page == pages[3]:
 
             if model is not None:
                 species_models[target_name] = model
-                # st.success(f"Loaded Gradient Boosting model for **{species_name}** ({target_name})")
             else:
                 species_models[target_name] = None
                 st.error(f"❌ Could not load Gradient Boosting {target_name} model for {species_name}")
