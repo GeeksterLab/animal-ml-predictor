@@ -5,8 +5,8 @@
 [![Streamlit App](https://img.shields.io/badge/Streamlit-App-ff4b4b?logo=streamlit&logoColor=white)](https://animal-ml-predictor.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
-[![Tests](https://github.com/GeeksterLab/Animal-Morphology-Weight-Predictor/actions/workflows/ci.yml/badge.svg)](https://github.com/GeeksterLab/animal-ml-predictor/actions)
-[![codecov](https://codecov.io/gh/GeeksterLab/Animal-Morphology-Weight-Predictor/graph/badge.svg?token=4A0A09P1VW)](https://codecov.io/gh/GeeksterLab/animal-ml-predictor)
+[![Tests](https://github.com/GeeksterLab/animal-ml-predictor/actions/workflows/ci.yml/badge.svg)](https://github.com/GeeksterLab/animal-ml-predictor/actions)
+[![codecov](https://codecov.io/gh/GeeksterLab/animal-ml-predictor/graph/badge.svg?token=YHY6RM20NI)](https://codecov.io/gh/GeeksterLab/animal-ml-predictor)
 
 ---
 
