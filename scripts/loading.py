@@ -59,7 +59,7 @@ def loading_df(file_path: Iterable[str] = DEFAULT_FILE_PATH, **read_csv_kwargs) 
                     logger.info("🟢 All required columns found.")
                 dfs.append(df_temp)
                 logger.info(f"✅ Successfully loaded: {os.path.basename(path)} ({df_temp.shape[0]} rows)")
-            except Exception as e:
+            except Exception as e: # pragma: no cover
                 logger.warning(f"⚠️ Reading error on {path}: {e}")
         else:
             logger.error(f"❌ File not found → {path}")

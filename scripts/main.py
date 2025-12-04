@@ -26,11 +26,6 @@ logger.info("🚀 Main pipeline initialized.")
 # LAMBDA PIPELINE
 # ==========================================================
 def main():
-    """
-    LAMBDA pipeline:
-    Cleans dataset row by row (dynamic cleaning).
-    Ideal for flexible or mixed-format datasets like AI content engagement.
-    """
 
     start = time.time()
     logger.info("🤖 Starting LAMBDA pipeline...")
@@ -57,7 +52,7 @@ def main():
         duration = time.time() - start
         logger.info(f"🏁 LAMBDA pipeline completed in {duration:.2f} seconds.")
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     main()
 
 
