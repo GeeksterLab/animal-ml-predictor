@@ -42,40 +42,36 @@ from utils.config_utils import (
 # ----------------------------------------------------------
 # 🔧 STREAMLIT-SAFE LOADER
 # ----------------------------------------------------------
-def load_model_safe(path: Path):
-    """Load a model with full error reporting for Streamlit Cloud."""
+def load_model_safe(path: Path, debug: bool = False):
+    """Load a model with optional Streamlit debug display."""
 
-    st.write(f"🔍 Loading model: `{path.name}`")
+    if debug:
+        st.write(f"🔍 Loading model: `{path.name}`")
+
+        st.write("📦 Environment versions:")
+        st.json({
+            "sklearn": sklearn.__version__,
+            "numpy": np.__version__,
+            "pandas": pd.__version__
+        })
 
     if not path.exists():
-        st.error(f"❌ File not found: {path}")
+        if debug:
+            st.error(f"❌ File not found: {path}")
         return None
 
-    st.write("📦 Environment versions:")
-    st.json({
-        "sklearn": sklearn.__version__,
-        "numpy": np.__version__,
-        "pandas": pd.__version__
-    })
-
-    # 3. Try loading with full traceback
-    # try:
-    #     model = joblib.load(path)
-    #     st.success(f"✅ Model loaded successfully: {path.name}")
-    #     return model
     try:
         model = joblib.load(path)
 
-        if not hasattr(model, "predict"):
-            st.error(f"❌ Loaded file is not a valid sklearn model: {path.name}")
-            return None
+        if debug:
+            st.success(f"✅ Model loaded successfully: {path.name}")
 
-        st.success(f"✅ Model loaded successfully: {path.name}")
         return model
 
     except Exception as e:
-        st.error("❌ Failed to load model:")
-        st.exception(e)  
+        if debug:
+            st.error("❌ Failed to load model:")
+            st.exception(e)
         return None
 
 # ----------------------------------------------------------
@@ -501,7 +497,7 @@ elif page == pages[3]:
 
         for target_name, model_path in paths.items():
 
-            model = load_model_safe(model_path)
+            model = load_model_safe(model_path, debug=DEBUG)
 
             if model is not None:
                 species_models[target_name] = model
