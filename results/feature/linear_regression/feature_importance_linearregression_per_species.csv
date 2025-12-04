@@ -1,0 +1,26 @@
+Species,Feature,Importance
+European Bison,Weight_kg,0.2302
+European Bison,Country_Czech Republic,31.8836
+European Bison,Country_Poland,41.523
+European Bison,Country_Slovakia,28.7904
+Hedgehog,Weight_kg,12.0067
+Hedgehog,Country_Austria,-0.477
+Hedgehog,Country_Czech,-0.3997
+Hedgehog,Country_Czech Republic,-1.1732
+Hedgehog,Country_Germany,2.7504
+Hedgehog,Country_Hungary,-1.0054
+Hedgehog,Country_Poland,-2.5474
+Hedgehog,Country_Slovakia,-0.7821
+Lynx,Weight_kg,0.0794
+Lynx,Country_Czech Republic,-2.9201
+Lynx,Country_Hungary,-3.1845
+Lynx,Country_Poland,-3.5756
+Lynx,Country_Slovakia,5.4045
+Red Squirrel,Weight_kg,1.7827
+Red Squirrel,Country_Austria,-0.0349
+Red Squirrel,Country_Czech,-0.123
+Red Squirrel,Country_Czech Republic,0.0606
+Red Squirrel,Country_Germany,-0.2733
+Red Squirrel,Country_Hungary,-1.2114
+Red Squirrel,Country_Poland,1.5747
+Red Squirrel,Country_Slovakia,0.0407

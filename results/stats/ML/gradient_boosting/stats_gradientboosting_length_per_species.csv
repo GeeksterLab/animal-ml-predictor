@@ -1,0 +1,5 @@
+Animal,n,MSE,MAE,R²,CV_R²_mean
+European Bison,59,874.19,26.11,0.61,0.52
+Hedgehog,275,16.6,3.21,-0.23,0.02
+Lynx,71,130.79,8.11,0.71,0.02
+Red Squirrel,567,17.98,2.0,-0.04,-1.77

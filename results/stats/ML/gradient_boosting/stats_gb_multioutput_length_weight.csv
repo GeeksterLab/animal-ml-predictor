@@ -1,0 +1,3 @@
+Target,MSE,MAE,R²
+Length_cm,303.468,6.025,0.881
+Weight_kg,4077.845,12.22,0.807

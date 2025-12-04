@@ -1,0 +1,1012 @@
+Country,Animal,Date,Weight_kg,Length_cm,Gender,Latitude,Longitude
+,,03/01/2024,,,,,
+,,03/02/2024,,,,,
+Poland,European Bison,01/03/2024,930.0,335.0,Male,52.828845,23.820144
+Poland,European Bison,01/03/2024,909.0,311.0,Not Determined,52.830509,23.826849
+Poland,European Bison,01/03/2024,581.0,277.0,Female,52.834109,23.807093
+Poland,European Bison,01/03/2024,900.0,295.0,Male,52.834759,23.817201
+Poland,European Buster,01/03/2024,620.0,250.0,Female,52.83496,23.82075
+Hungary,Lynx,01/03/2024,24.0,76.0,Male,48.505494,20.551966
+Hungary,Lynx,01/03/2024,23.0,82.0,Female,48.506529,20.554548
+Poland,Red Squirrel,01/03/2024,0.308,22.0,Female,52.241273,21.055745
+Poland,Red Squirrel,01/03/2024,0.348,20.0,Female,52.24206,21.057802
+Poland,Red Squirrel,01/03/2024,0.316,20.0,Male,52.240035,21.056188
+Poland,Red Squirrel,01/03/2024,0.34,21.0,,52.240284,21.051948
+Poland,Red Squirrel,01/03/2024,0.333,21.0,Male,,
+Poland,Red Squirrel,01/03/2024,0.265,19.0,Female,52.24056,21.055899
+Poland,Red Squirrel,01/03/2024,,,Male,52.241177,21.052873
+Poland,Red Squirrel,01/03/2024,0.261,22.0,Female,52.240833,21.052093
+Poland,Red Squirrel,01/03/2024,0.317,23.0,Male,52.241358,21.056352
+Poland,Red Squirrel,01/03/2024,0.328,21.0,Male,52.241905,21.050727
+Hungary,Red Squirrel,01/03/2024,0.305,21.0,Male,47.511401,18.949119
+Poland,Red Squirrel,01/03/2024,0.328,23.0,Male,52.24192,21.056347
+Germany,Red Squirrel,01/03/2024,0.294,19.0,Male,,
+Germany,Red Squirrel,01/03/2024,0.25,19.0,Female,,
+Germany,Red Squirrel,01/03/2024,0.262,21.0,Male,,
+Germany,Red Squirrel,01/03/2024,0.267,21.0,Female,,
+Germany,Red Squirrel,01/03/2024,0.269,22.0,Male,,
+Germany,Red Squirrel,01/03/2024,0.308,22.0,Female,,
+Germany,Red Squirrel,01/03/2024,0.308,19.0,Male,,
+Germany,Red Squirrel,01/03/2024,0.27,20.0,Male,,
+Germany,Red Squirrel,01/03/2024,0.32,20.0,Male,,
+Germany,Red Squirrel,01/03/2024,0.262,20.0,Male,,
+Germany,Red Squirrel,01/03/2024,0.256,21.0,Male,,
+Germany,Red Squirrel,01/03/2024,0.245,22.0,Male,,
+Germany,Red Squirrel,01/03/2024,0.292,19.0,Male,,
+Germany,Red Squirrel,01/03/2024,0.289,19.0,Female,,
+Germany,Red Squirrel,01/03/2024,0.308,22.0,Male,,
+Slovakia,European Bison,01/03/2024,420.0,182.0,Male,49.054684,22.417189
+Slovakia,European Bison,01/03/2024,511.0,266.0,Female,49.053629,22.421831
+Slovakia,European Bison,01/03/2024,814.0,288.0,Male,49.053489,22.415229
+Slovakia,European Bison,01/03/2024,130.0,141.0,Female,49.054166,22.422852
+Slovakia,European Bison,01/03/2024,390.0,180.0,Female,49.052731,22.422675
+Slovakia,European Bison,01/03/2024,355.0,179.0,Male,49.055974,22.415985
+Slovakia,European Bison,01/03/2024,566.0,272.0,Female,49.053342,22.423867
+Slovakia,European Bison,01/03/2024,393.0,152.0,Not Determined,49.056471,22.422475
+Czech Republic,European Bison,01/03/2024,823.0,286.0,Male,50.636564,14.834553
+Slovakia,European Bison,01/03/2024,695.0,316.0,Male,49.055537,22.419428
+Czech Republic,Hedgehog,01/03/2024,0.6,20.0,Female,50.636869,14.844555
+Czech Republic,Hedgehog,01/03/2024,0.6,-16.0,Male,50.644733,14.835753
+Czech Republic,Hedgehog,01/03/2024,1.2,31.0,Male,50.635766,14.844247
+Slovakia,Red Squirrel,01/03/2024,0.275,23.0,Male,48.185353,17.08322
+Czech Republic,Hedgehog,01/03/2024,0.9,22.0,Male,50.642843,14.84124
+Poland,Red Squirrel,01/03/2024,0.308,22.0,Female,52.241273,21.055745
+Poland,Red Squirrel,01/03/2024,0.348,20.0,Female,52.24206,21.057802
+Poland,Red Squirrel,01/03/2024,0.316,20.0,Male,52.240035,21.056188
+Poland,Red Squirrel,01/03/2024,0.34,21.0,,52.240284,21.051948
+Poland,Red Squirrel,01/03/2024,0.333,21.0,Male,,
+Poland,Red Squirrel,01/03/2024,0.265,19.0,Female,52.24056,21.055899
+Poland,Red Squirrel,01/03/2024,,,Male,52.241177,21.052873
+Poland,Red Squirrel,01/03/2024,0.261,22.0,Female,52.240833,21.052093
+Poland,Red Squirrel,01/03/2024,0.317,23.0,Male,52.241358,21.056352
+Poland,Red Squirrel,01/03/2024,0.328,21.0,Male,52.241905,21.050727
+Hungary,Red Squirrel,01/03/2024,0.305,21.0,Male,47.511401,18.949119
+Poland,Red Squirrel,01/03/2024,0.328,23.0,Male,52.24192,21.056347
+Hungary,Lynx,02/03/2024,23.0,78.0,Female,48.504128,20.568479
+Poland,Lynx,02/03/2024,29.0,94.0,Male,52.809851,23.858071
+Germany,Red Squirrel,02/03/2024,0.244,22.0,Female,,
+Germany,Red Squirrel,02/03/2024,0.299,21.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.284,20.0,Female,,
+Germany,Red Squirrel,02/03/2024,0.289,20.0,Female,,
+Germany,Red Squirrel,02/03/2024,0.284,21.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.314,22.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.262,19.0,Female,,
+Germany,Red Squirrel,02/03/2024,0.258,20.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.297,21.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.255,22.0,Female,,
+Germany,Red Squirrel,02/03/2024,0.28,22.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.293,22.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.295,20.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.28,20.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.281,20.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.245,21.0,Female,,
+Germany,Red Squirrel,02/03/2024,0.283,21.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.27,19.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.315,22.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.254,17.0,Female,,
+Germany,Red Squirrel,02/03/2024,0.249,19.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.298,21.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.314,19.0,Female,,
+Germany,Red Squirrel,02/03/2024,0.28,20.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.251,19.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.293,20.0,Female,,
+Germany,Red Squirrel,02/03/2024,0.301,20.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.271,17.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.275,20.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.314,19.0,Female,,
+Germany,Red Squirrel,02/03/2024,0.304,21.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.308,20.0,Male,,
+Germany,Red Squirrel,02/03/2024,0.24,21.0,Male,,
+Czech,European Bison,02/03/2024,402.0,162.0,Female,50.641008,14.836529
+Czech Republic,European Bison,02/03/2024,535.0,295.0,Male,50.643406,14.836495
+Czech Republic,European Buster,02/03/2024,572.0,251.0,Female,50.638945,14.845452
+Czech Republic,Hedgehog,02/03/2024,0.9,20.0,Female,50.639869,14.849702
+Czech Republic,Hedgehog,02/03/2024,0.7,16.0,Female,50.643039,14.840662
+Czech Republic,Hedgehog,02/03/2024,0.7,14.0,Female,50.637879,14.838429
+Czech Republic,Hedgehog,02/03/2024,1.1,32.0,Male,50.643254,14.84373
+Czech Republic,Hedgehog,02/03/2024,0.5,20.0,Male,50.643854,14.837155
+Czech Republic,Hedgehog,02/03/2024,1.1,22.0,Female,50.635584,14.837072
+Czech Republic,Hedgehog,02/03/2024,1.0,20.0,Female,50.642723,14.837229
+Czech Republic,Hedgehog,02/03/2024,0.7,13.0,Female,50.639389,14.8444
+Slovakia,Lynx,02/03/2024,30.0,120.0,Male,48.409308,18.832606
+Hungary,Red Squirrel,03/03/2024,0.262,20.0,Female,47.510799,18.945583
+,,03/03/2024,,,,,
+Czech Republic,Hedgehog,03/03/2024,0.6,20.0,Male,50.637375,14.839785
+Slovakia,Lynx,03/03/2024,28.0,131.0,Male,48.406304,18.842851
+Slovakia,Red Squirrel,03/03/2024,0.281,18.0,Male,48.18769,17.086471
+Hungary,Red Squirrel,03/03/2024,0.262,20.0,Female,47.510799,18.945583
+Poland,European Bison,04/03/2024,650.0,285.0,Female,52.834741,23.826716
+Hungary,Hedgehog,04/03/2024,1.1,24.0,Male,48.503795,20.555932
+Hungary,Hedgehog,04/03/2024,1.1,26.0,Not Determined,48.503062,20.551698
+Hungary,Hedgehog,04/03/2024,0.8,18.0,Female,48.503498,20.539662
+Hungary,Hedgehog,04/03/2024,1.2,26.0,Male,48.509298,20.551977
+Poland,Hedgehog,04/03/2024,0.9,22.0,Male,52.214679,21.033021
+Hungary,Lynx,04/03/2024,25.0,89.0,Male,48.504169,20.559452
+Hungary,Red Squirrel,04/03/2024,0.283,18.0,Female,48.505251,20.551473
+Hungary,Red Squirrel,04/03/2024,0.307,-19.0,Male,,
+Hungary,Red Squirrel,04/03/2024,0.296,22.0,Male,48.502584,20.532518
+Hungary,Red Squirrel,04/03/2024,0.301,18.0,Female,48.505512,20.538038
+Hungary,Red Squirrel,04/03/2024,0.295,17.0,Male,48.50578,20.546466
+Hungary,Red Squirrel,04/03/2024,0.32,18.0,Male,48.502091,20.547521
+Hungary,Red Squirrel,04/03/2024,0.28,19.0,Female,48.505494,20.536362
+Poland,Red Squirrel,04/03/2024,0.33,24.0,Male,52.241203,21.050999
+Poland,Red Squirrel,04/03/2024,0.3,22.0,Female,52.240018,21.05239
+Poland,Red Squirrel,04/03/2024,0.283,17.0,Female,52.239931,21.056703
+Poland,Red Squirrel,04/03/2024,0.341,21.0,Male,52.241856,21.053078
+Poland,Red Squirrel,04/03/2024,0.35,24.0,Male,52.240453,21.055847
+Poland,Red Squirrel,04/03/2024,0.291,21.0,,52.241662,21.05643
+Poland,Red Squirrel,04/03/2024,0.329,22.0,Female,52.241638,21.055998
+Hungary,Red Squirrel,04/03/2024,0.327,18.0,Female,48.502803,20.548668
+Poland,Red Squirrel,04/03/2024,0.35,24.0,Male,52.240497,21.055991
+Czech Republic,Hedgehog,04/03/2024,0.6,17.0,Male,50.635501,14.838158
+Czech Republic,Hedgehog,04/03/2024,0.9,22.0,Female,50.638142,14.849689
+Czech Republic,Red Squirrel,04/03/2024,0.289,21.0,Female,49.937872,14.179825
+Slovakia,Red Squirrel,04/03/2024,0.297,20.0,Female,48.185194,17.083142
+Hungary,Red Squirrel,04/03/2024,0.283,18.0,Female,48.505251,20.551473
+Hungary,Red Squirrel,04/03/2024,0.307,-19.0,Male,,
+Hungary,Red Squirrel,04/03/2024,0.296,22.0,Male,48.502584,20.532518
+Hungary,Red Squirrel,04/03/2024,0.301,18.0,Female,48.505512,20.538038
+Hungary,Red Squirrel,04/03/2024,0.295,17.0,Male,48.50578,20.546466
+Hungary,Red Squirrel,04/03/2024,0.32,18.0,Male,48.502091,20.547521
+Hungary,Red Squirrel,04/03/2024,0.28,19.0,Female,48.505494,20.536362
+Poland,Red Squirrel,04/03/2024,0.33,24.0,Male,52.241203,21.050999
+Poland,Red Squirrel,04/03/2024,0.3,22.0,Female,52.240018,21.05239
+Poland,Red Squirrel,04/03/2024,0.283,17.0,Female,52.239931,21.056703
+Poland,Red Squirrel,04/03/2024,0.341,21.0,Male,52.241856,21.053078
+Poland,Red Squirrel,04/03/2024,0.35,24.0,Male,52.240453,21.055847
+Poland,Red Squirrel,04/03/2024,0.291,21.0,,52.241662,21.05643
+Poland,Red Squirrel,04/03/2024,0.329,22.0,Female,52.241638,21.055998
+Hungary,Red Squirrel,04/03/2024,0.327,18.0,Female,48.502803,20.548668
+Poland,Red Squirrel,04/03/2024,0.35,24.0,Male,52.240497,21.055991
+Hungary,Lynx,05/03/2024,24.0,79.0,Male,48.503043,20.561567
+Poland,Red Squirrel,05/03/2024,0.301,23.0,Female,52.240867,21.054339
+Poland,Red Squirrel,05/03/2024,0.344,20.0,Male,52.240522,21.057552
+Hungary,Red Squirrel,05/03/2024,0.253,-19.0,Male,47.507002,18.950091
+Hungary,Red Squirrel,05/03/2024,0.293,18.0,Female,47.507557,18.942066
+Austria,,05/03/2024,0.263,22.0,Male,,
+Czech,Hedgehog,05/03/2024,0.9,19.0,Female,50.107284,14.346127
+Slovakia,Lynx,05/03/2024,23.0,97.0,Female,48.413226,18.848128
+Slovakia,Red Squirrel,05/03/2024,0.333,23.0,Male,48.409023,18.84399
+Slovakia,Red Squirrel,05/03/2024,0.32,17.0,Male,48.406733,18.838754
+Slovakia,Red Squirrel,05/03/2024,0.266,18.0,Female,48.40459,18.846849
+Slovakia,Red Squirrel,05/03/2024,0.306,22.0,Male,48.408318,18.844383
+Slovakia,Red Squirrel,05/03/2024,0.311,22.0,Male,48.412458,18.832425
+Slovakia,Red Squirrel,05/03/2024,0.291,22.0,Female,48.406551,18.837137
+Slovakia,Red Squirrel,05/03/2024,0.259,19.0,Male,48.405516,18.850994
+Poland,Red Squirrel,05/03/2024,0.301,23.0,Female,52.240867,21.054339
+Poland,Red Squirrel,05/03/2024,0.344,20.0,Male,52.240522,21.057552
+Hungary,Red Squirrel,05/03/2024,0.253,-19.0,Male,47.507002,18.950091
+Hungary,Red Squirrel,05/03/2024,0.293,18.0,Female,47.507557,18.942066
+Poland,European Bison,06/03/2024,454.0,225.0,Female,52.834423,23.827103
+Poland,Hedgehog,06/03/2024,1.1,22.0,Female,52.214521,21.031889
+Poland,Hedgehog,06/03/2024,0.9,21.0,Male,52.214934,21.032106
+Hungary,Lynx,06/03/2024,18.0,81.0,Female,48.511532,20.539112
+Poland,Red Squirrel,06/03/2024,0.343,23.0,Male,52.241638,21.057329
+Poland,Red Squirrel,06/03/2024,0.274,22.0,Female,52.241235,21.057356
+Czech Republic,Hedgehog,06/03/2024,0.6,17.0,Female,50.106942,14.348502
+Czech Republic,Hedgehog,06/03/2024,0.4,12.0,Female,50.107223,14.34732
+Czech Republic,Hedgehog,06/03/2024,1.1,26.0,Male,50.106379,14.347645
+Czech Republic,Hedgehog,06/03/2024,0.8,22.0,Male,50.106579,14.346283
+Slovakia,Red Squirrel,06/03/2024,0.334,21.0,Male,48.188008,17.085312
+Slovakia,Red Squirrel,06/03/2024,0.307,23.0,Female,48.185298,17.084072
+Poland,Red Squirrel,06/03/2024,0.343,23.0,Male,52.241638,21.057329
+Poland,Red Squirrel,06/03/2024,0.274,22.0,Female,52.241235,21.057356
+Poland,European Bison,07/03/2024,862.0,312.0,Male,52.831879,23.826297
+Hungary,Hedgehog,07/03/2024,,,Female,48.506206,20.565308
+Hungary,Hedgehog,07/03/2024,0.5,16.0,Male,48.50509,20.539448
+Hungary,Hedgehog,07/03/2024,0.8,23.0,Female,48.504425,20.548744
+Hungary,Hedgehog,07/03/2024,0.7,18.0,Female,48.505617,20.541054
+Hungary,Hedgehog,07/03/2024,1.2,23.0,Male,48.503254,20.555951
+Hungary,Hedgehog,07/03/2024,0.5,15.0,Male,48.502359,20.563385
+Hungary,Hedgehog,07/03/2024,0.6,18.0,Female,48.511048,20.567209
+Hungary,Lynx,07/03/2024,29.0,109.0,Male,48.501574,20.532455
+Poland,Lynx,07/03/2024,26.0,85.0,Female,52.808579,23.843768
+Hungary,Red Squirrel,07/03/2024,0.296,19.0,Male,-2.023546,34.896734
+Hungary,Red Squirrel,07/03/2024,0.3,23.0,Male,48.505406,20.535848
+Hungary,Red Squirrel,07/03/2024,0.286,18.0,Female,48.503917,20.536503
+Poland,Red Squirrel,07/03/2024,0.318,21.0,Male,52.240616,21.054902
+Czech Republic,European Bison,07/03/2024,716.0,303.0,Male,50.636161,14.846951
+Czech Republic,European Bison,07/03/2024,541.0,212.0,Female,50.642592,14.85014
+Czech Republic,European Bison,07/03/2024,30.0,100.0,Female,50.636423,14.847287
+Czech Republic,Hedgehog,07/03/2024,0.7,20.0,Female,50.106607,14.347909
+Czech Republic,Hedgehog,07/03/2024,0.7,20.0,Female,50.106925,14.346629
+Czech Republic,Hedgehog,07/03/2024,1.2,26.0,Male,50.107284,14.347676
+Czech Republic,Red Squirrel,07/03/2024,0.273,17.0,Female,49.938634,14.181813
+Hungary,Red Squirrel,07/03/2024,0.296,19.0,Male,-2.023546,34.896734
+Hungary,Red Squirrel,07/03/2024,0.3,23.0,Male,48.505406,20.535848
+Hungary,Red Squirrel,07/03/2024,0.286,18.0,Female,48.503917,20.536503
+Poland,Red Squirrel,07/03/2024,0.318,21.0,Male,52.240616,21.054902
+Hungary,Hedgehog,08/03/2024,1.0,24.0,Female,48.506913,20.540427
+Poland,Hedgehog,08/03/2024,0.8,19.0,Female,52.214365,21.031462
+Hungary,Red Squirrel,08/03/2024,0.261,19.0,Female,47.507023,18.940532
+Czech Republic,Hedgehog,08/03/2024,0.8,22.0,Male,50.106811,14.348513
+Czech Republic,Hedgehog,08/03/2024,1.1,23.0,Male,50.107278,14.348461
+Hungary,Red Squirrel,08/03/2024,0.261,19.0,Female,47.507023,18.940532
+Poland,European Bison,09/03/2024,621.0,277.0,Female,52.828561,23.816861
+Poland,European Bison,09/03/2024,385.0,168.0,Female,52.833261,23.815203
+Poland,Hedgehog,09/03/2024,0.6,-19.0,Male,52.21441,21.032484
+Poland,Hedgehog,09/03/2024,0.8,22.0,Female,52.214452,21.034505
+Hungary,Lynx,09/03/2024,12.0,61.0,Female,48.508239,20.567914
+Hungary,Lynx,09/03/2024,23.0,73.0,Female,48.507503,20.551726
+Poland,Lynx,09/03/2024,20.0,95.0,Female,52.814984,23.840681
+Poland,Lynx,09/03/2024,18.0,63.0,Male,52.812647,23.863299
+Poland,Red Squirrel,09/03/2024,0.302,22.0,Male,52.241375,21.050845
+Hungary,Red Squirrel,09/03/2024,0.284,20.0,Female,47.50938,18.949607
+Czech Republic,Hedgehog,09/03/2024,0.9,22.0,Female,50.106583,14.346471
+Czech Republic,Hedgehog,09/03/2024,1.1,23.0,Male,50.10696,14.346126
+Czech Republic,Hedgehog,09/03/2024,0.6,19.0,Male,50.106311,14.346906
+Czech Republic,Red Squirrel,09/03/2024,0.293,19.0,Male,49.937416,14.181449
+Poland,Red Squirrel,09/03/2024,0.302,22.0,Male,52.241375,21.050845
+Hungary,Red Squirrel,09/03/2024,0.284,20.0,Female,47.50938,18.949607
+Hungary,Hedgehog,10/03/2024,0.9,20.0,Female,48.51108,20.567192
+Hungary,Hedgehog,10/03/2024,0.9,21.0,Male,48.50529,20.566169
+Hungary,Hedgehog,10/03/2024,1.1,26.0,Male,48.502486,20.562565
+Hungary,Lynx,10/03/2024,23.0,77.0,Female,48.509272,20.551952
+Hungary,Lynx,10/03/2024,15.0,71.0,Male,48.50118,20.557432
+Czech Republic,Hedgehog,10/03/2024,0.8,17.0,Male,49.938707,14.182507
+Czech Republic,Hedgehog,10/03/2024,0.5,18.0,Female,49.937531,14.180359
+Czech Republic,Hedgehog,10/03/2024,0.7,17.0,Female,49.93789,14.180882
+Czech Republic,Hedgehog,10/03/2024,0.5,15.0,Female,49.93734,14.18071
+Poland,European Bison,11/03/2024,24.0,100.0,Female,52.834112,23.825722
+Hungary,Hedgehog,11/03/2024,0.9,19.0,Female,48.505634,20.543417
+Poland,Hedgehog,11/03/2024,0.8,16.0,Female,52.214968,21.030987
+Hungary,Lynx,11/03/2024,20.0,90.0,Female,48.501938,20.567814
+Hungary,Red Squirrel,11/03/2024,0.322,21.0,Male,48.506217,20.545055
+Hungary,Red Squirrel,11/03/2024,0.282,21.0,Male,-2.023546,34.896734
+Hungary,Red Squirrel,11/03/2024,0.311,22.0,Female,48.505737,20.546731
+Hungary,Red Squirrel,11/03/2024,0.336,22.0,Female,48.506095,20.543032
+Hungary,Red Squirrel,11/03/2024,0.29,21.0,Male,48.506429,20.543875
+Hungary,Red Squirrel,11/03/2024,0.293,20.0,Male,48.50586,20.547649
+Hungary,Red Squirrel,11/03/2024,0.335,19.0,Female,48.502521,20.558578
+Hungary,Red Squirrel,11/03/2024,0.339,19.0,Female,48.503752,20.558664
+Poland,Red Squirrel,11/03/2024,0.304,22.0,,52.241093,21.055413
+Czech Republic,Red Squirrel,11/03/2024,0.271,18.0,Male,49.937391,14.179566
+Hungary,Red Squirrel,11/03/2024,0.322,21.0,Male,48.506217,20.545055
+Hungary,Red Squirrel,11/03/2024,0.282,21.0,Male,-2.023546,34.896734
+Hungary,Red Squirrel,11/03/2024,0.311,22.0,Female,48.505737,20.546731
+Hungary,Red Squirrel,11/03/2024,0.336,22.0,Female,48.506095,20.543032
+Hungary,Red Squirrel,11/03/2024,0.29,21.0,Male,48.506429,20.543875
+Hungary,Red Squirrel,11/03/2024,0.293,20.0,Male,48.50586,20.547649
+Hungary,Red Squirrel,11/03/2024,0.335,19.0,Female,48.502521,20.558578
+Hungary,Red Squirrel,11/03/2024,0.339,19.0,Female,48.503752,20.558664
+Poland,Red Squirrel,11/03/2024,0.304,22.0,,52.241093,21.055413
+Poland,European Bison,12/03/2024,315.0,175.0,Male,52.829512,23.811681
+Poland,Red Squirrel,12/03/2024,0.316,24.0,Male,52.240707,21.057051
+Hungary,Red Squirrel,12/03/2024,,,Female,47.508454,18.949343
+Czech Republic,Hedgehog,12/03/2024,0.6,20.0,Male,49.938169,14.178703
+Czech,Hedgehog,12/03/2024,0.4,17.0,Male,49.938527,14.179315
+Czech Republic,Red Squirrel,12/03/2024,0.324,23.0,Female,49.937724,14.182072
+Poland,Red Squirrel,12/03/2024,0.316,24.0,Male,52.240707,21.057051
+Hungary,Red Squirrel,12/03/2024,,,Female,47.508454,18.949343
+Hungary,Hedgehog,13/03/2024,0.6,14.0,Female,48.506262,20.547343
+Poland,Hedgehog,13/03/2024,0.8,24.0,Male,52.214734,21.031915
+Hungary,Lynx,13/03/2024,20.0,86.0,Male,48.504717,20.558726
+Poland,Red Squirrel,13/03/2024,0.36,23.0,Female,52.24151,21.052575
+Hungary,Red Squirrel,13/03/2024,0.26,18.0,Male,47.505768,18.943674
+Germany,Red Squirrel,13/03/2024,0.335,18.0,Male,48.161549,11.493041
+Czech Republic,Hedgehog,13/03/2024,0.6,15.0,Female,49.939297,14.181453
+Slovakia,Red Squirrel,13/03/2024,0.288,18.0,Female,48.185953,17.08393
+Poland,Red Squirrel,13/03/2024,0.36,23.0,Female,52.24151,21.052575
+Hungary,Red Squirrel,13/03/2024,0.26,18.0,Male,47.505768,18.943674
+Poland,European Bison,14/03/2024,610.0,258.0,Female,52.821135,23.809947
+Hungary,Hedgehog,14/03/2024,0.7,21.0,Female,48.509199,20.552447
+Poland,Hedgehog,14/03/2024,1.0,21.0,Female,52.213985,21.030841
+Poland,Hedgehog,14/03/2024,0.8,15.0,Female,52.213877,21.030861
+Poland,Red Squirrel,14/03/2024,0.32,21.0,Female,52.241309,21.057247
+Hungary,Red Squirrel,14/03/2024,0.287,23.0,Female,47.508679,18.946127
+Australia,Hedgehog,14/03/2024,0.8,24.0,Not Determined,47.781689,14.386777
+Austria,Hedgehog,14/03/2024,0.7,19.0,Female,47.781139,14.382004
+Austria,Hedgehog,14/03/2024,0.8,20.0,Male,47.781828,14.385001
+Austria,Hedgehog,14/03/2024,0.6,14.0,Female,47.78106,14.386807
+Austria,Hedgehog,14/03/2024,0.7,24.0,Male,47.780872,14.38446
+Austria,Hedgehog,14/03/2024,0.8,21.0,Female,47.781117,14.38608
+Austria,Lynx,14/03/2024,22.0,80.0,Female,47.780779,14.384918
+Austria,Lynx,14/03/2024,23.0,86.0,Male,47.781257,14.383099
+Czech Republic,Hedgehog,14/03/2024,0.9,16.0,Female,49.93849,14.1802
+Poland,Red Squirrel,14/03/2024,0.32,21.0,Female,52.241309,21.057247
+Hungary,Red Squirrel,14/03/2024,0.287,23.0,Female,47.508679,18.946127
+Poland,Hedgehog,15/03/2024,0.9,22.0,Male,52.214498,21.034201
+Poland,Lynx,15/03/2024,16.0,70.0,Male,52.803129,23.844358
+Czech Republic,Hedgehog,15/03/2024,0.7,21.0,Female,49.938132,14.181225
+Slovakia,Red Squirrel,15/03/2024,0.294,23.0,Male,48.184374,17.086
+Czech Republic,Red Squirrel,15/03/2024,0.267,18.0,Female,49.93886,14.182738
+Czech Republic,Red Squirrel,15/03/2024,0.328,19.0,Male,49.938357,14.177929
+Poland,European Bison,16/03/2024,35.0,125.0,Female,52.820739,23.815145
+Hungary,Hedgehog,16/03/2024,0.6,23.0,Male,48.501763,20.547976
+Poland,Lynx,16/03/2024,16.0,72.0,Male,52.814211,23.834358
+Poland,Lynx,16/03/2024,18.0,81.0,Female,52.802757,23.835199
+Poland,Red Squirrel,16/03/2024,0.346,19.0,Male,52.240529,21.053603
+Hungary,Red Squirrel,16/03/2024,0.27,22.0,Female,47.509866,18.942538
+Slovakia,Red Squirrel,16/03/2024,0.326,19.0,Female,48.185585,17.091365
+Poland,Red Squirrel,16/03/2024,0.346,19.0,Male,52.240529,21.053603
+Hungary,Red Squirrel,16/03/2024,0.27,22.0,Female,47.509866,18.942538
+Poland,European Bison,17/03/2024,915.0,304.0,Male,52.82288,23.810852
+Hungary,Hedgehog,17/03/2024,0.7,15.0,Female,48.504773,20.536543
+Poland,Hedgehog,17/03/2024,0.6,15.0,Female,52.214745,21.033701
+Hungary,Red Squirrel,17/03/2024,0.278,21.0,Female,47.510304,18.942925
+Slovakia,Red Squirrel,17/03/2024,0.322,23.0,Female,49.056857,22.416369
+Slovakia,Red Squirrel,17/03/2024,0.302,23.0,Male,48.41237,18.875325
+Slovakia,Red Squirrel,17/03/2024,0.334,20.0,Female,48.406983,18.863197
+Slovakia,Red Squirrel,17/03/2024,0.28,19.0,Male,48.411486,18.86773
+Slovakia,Red Squirrel,17/03/2024,0.289,18.0,Male,48.410536,18.870325
+Hungary,Red Squirrel,17/03/2024,0.278,21.0,Female,47.510304,18.942925
+Poland,European Bison,18/03/2024,537.0,287.0,Female,52.8255,23.808386
+Poland,Red Squirrel,18/03/2024,0.346,23.0,Male,52.240737,21.053063
+Czech Republic,Hedgehog,18/03/2024,1.2,26.0,Male,49.938547,14.180402
+Czech Republic,Hedgehog,18/03/2024,0.9,17.0,Male,49.937429,14.18264
+Czech Republic,Red Squirrel,18/03/2024,0.32,18.0,Female,49.938634,14.179739
+Czech Republic,Red Squirrel,18/03/2024,0.266,17.0,Male,49.939062,14.177939
+Poland,Red Squirrel,18/03/2024,0.346,23.0,Male,52.240737,21.053063
+Hungary,Hedgehog,19/03/2024,1.1,19.0,Female,48.502512,20.563331
+Poland,Hedgehog,19/03/2024,0.4,16.0,Male,52.214758,21.030697
+Austria,Hedgehog,19/03/2024,1.1,21.0,Female,47.781212,14.384017
+Austria,Hedgehog,19/03/2024,0.7,25.0,Male,47.781764,14.38328
+Austria,Hedgehog,19/03/2024,1.1,24.0,Male,47.781883,14.382628
+Austria,Hedgehog,19/03/2024,0.4,21.0,Female,47.781093,14.38209
+Germany,Hedgehog,19/03/2024,0.8,16.0,Male,52.585958,13.147098
+Germany,Hedgehog,19/03/2024,0.5,18.0,Female,52.586199,13.152793
+Germany,Hedgehog,19/03/2024,0.5,18.0,Male,52.586589,13.146651
+Germany,Hedgehog,19/03/2024,0.4,13.0,Female,52.587327,13.149206
+Germany,Hedgehog,19/03/2024,1.0,21.0,Male,52.585937,13.146151
+Czech Republic,Hedgehog,19/03/2024,1.0,17.0,Female,49.937696,14.182707
+Slovakia,Lynx,19/03/2024,16.0,65.0,Male,48.405926,18.839219
+Slovakia,Red Squirrel,19/03/2024,0.33,18.0,,48.184757,17.082936
+Slovakia,Red Squirrel,19/03/2024,0.323,23.0,Female,48.186767,17.089935
+Poland,Hedgehog,20/03/2024,0.4,16.0,Female,52.214754,21.034364
+Poland,Hedgehog,20/03/2024,0.7,26.0,Male,52.215034,21.03303
+Poland,Red Squirrel,20/03/2024,0.35,19.0,Female,52.241637,21.05154
+Hungary,Red Squirrel,20/03/2024,0.284,18.0,Female,47.505786,18.943124
+Czech Republic,Hedgehog,20/03/2024,0.5,13.0,Male,49.937455,14.180775
+Slovakia,Lynx,20/03/2024,17.0,80.0,Female,48.407449,18.850762
+Poland,Red Squirrel,20/03/2024,0.35,19.0,Female,52.241637,21.05154
+Hungary,Red Squirrel,20/03/2024,0.284,18.0,Female,47.505786,18.943124
+Poland,European Bison,21/03/2024,302.0,150.0,Female,52.820447,23.813259
+Hungary,Hedgehog,21/03/2024,1.2,29.0,Male,48.503795,20.555932
+Poland,Hedgehog,21/03/2024,1.2,25.0,Male,52.214156,21.0325
+Poland,Lynx,21/03/2024,171.0,75.0,Male,52.831229,23.814123
+Poland,Lynx,21/03/2024,18.0,73.0,Female,52.832726,23.825032
+Poland,Red Squirrel,21/03/2024,0.33,23.0,Male,50.041479,19.951211
+Poland,Red Squirrel,21/03/2024,,,Male,50.041154,19.949919
+Hungary,Red Squirrel,21/03/2024,0.315,19.0,Male,47.506414,18.941655
+Austria,Hedgehog,21/03/2024,0.8,24.0,Male,47.781236,14.382219
+Australia,Hedgehog,21/03/2024,0.6,14.0,Female,47.781248,14.382649
+Germany,Hedgehog,21/03/2024,1.1,21.0,Male,52.585628,13.149093
+Germany,Hedgehog,21/03/2024,1.1,22.0,Female,52.58329,13.149155
+Austria,Lynx,21/03/2024,20.0,74.0,Female,47.781106,14.382184
+Germany,Red Squirrel,21/03/2024,0.323,20.0,Male,52.581896,13.151801
+Germany,Red Squirrel,21/03/2024,0.276,21.0,Female,52.581885,13.152811
+Germany,Red Squirrel,21/03/2024,0.339,21.0,Male,52.587248,13.151499
+Germany,Red Squirrel,21/03/2024,0.34,19.0,Female,52.58237,13.146855
+Czech Republic,European Bison,21/03/2024,750.0,242.0,Male,50.638137,14.838129
+Czech Republic,European Bison,21/03/2024,35.0,110.0,Male,50.640733,14.84516
+Czech Republic,European Buster,21/03/2024,360.0,175.0,Female,50.636642,14.847946
+Czech Republic,Hedgehog,21/03/2024,1.1,18.0,Female,49.939474,14.180897
+Czech,Red Squirrel,21/03/2024,0.335,20.0,Male,49.938958,14.181258
+Slovakia,Red Squirrel,21/03/2024,0.273,23.0,Male,48.185898,17.090683
+Slovakia,Red Squirrel,21/03/2024,0.33,19.0,Male,48.186672,17.091508
+Slovakia,Red Squirrel,21/03/2024,0.329,19.0,Female,48.18685,17.091228
+Poland,Red Squirrel,21/03/2024,0.33,23.0,Male,50.041479,19.951211
+Poland,Red Squirrel,21/03/2024,,,Male,50.041154,19.949919
+Hungary,Red Squirrel,21/03/2024,0.315,19.0,Male,47.506414,18.941655
+Poland,European Bison,22/03/2024,1000.0,320.0,Male,52.82547,23.81307
+Hungary,Hedgehog,22/03/2024,1.1,18.0,Male,48.503062,20.551698
+Germany,Red Squirrel,22/03/2024,0.306,23.0,Male,52.584352,13.148089
+Germany,Red Squirrel,22/03/2024,0.334,19.0,Male,52.587863,13.147785
+Germany,Red Squirrel,22/03/2024,0.334,21.0,Male,52.587734,13.151378
+Germany,Red Squirrel,22/03/2024,0.329,19.0,Female,52.582754,13.145364
+Germany,Red Squirrel,22/03/2024,0.317,22.0,Male,52.585517,13.150878
+Germany,Red Squirrel,22/03/2024,0.267,21.0,Female,52.588834,13.15192
+Czech Republic,European Bison,22/03/2024,603.0,291.0,Male,50.644813,14.839817
+Czech Republic,European Bison,22/03/2024,717.0,305.0,Male,50.635565,14.83932
+Czech Republic,European Bison,22/03/2024,390.0,145.0,Female,50.639856,14.847626
+Czech Republic,Hedgehog,22/03/2024,0.6,21.0,Female,49.939062,14.17875
+Czech Republic,Hedgehog,22/03/2024,1.1,21.0,Male,49.939165,14.182528
+Czech Republic,Hedgehog,22/03/2024,0.7,18.0,Female,49.937562,14.181101
+Czech Republic,Hedgehog,22/03/2024,1.2,23.0,Male,49.939201,14.178923
+Slovakia,Lynx,22/03/2024,25.0,96.0,Female,48.410693,18.832845
+Poland,European Bison,23/03/2024,660.0,246.0,Female,52.824079,23.81279
+Poland,European Bison,23/03/2024,619.0,248.0,Female,52.826081,23.815823
+Hungary,Hedgehog,23/03/2024,0.6,19.0,Female,48.503498,20.539662
+Hungary,Hedgehog,23/03/2024,0.8,25.0,Male,48.509298,20.551977
+Hungary,Hedgehog,23/03/2024,0.4,15.0,Female,48.506206,20.565308
+Hungary,Hedgehog,23/03/2024,1.1,22.0,Male,48.50509,20.539448
+Poland,Hedgehog,23/03/2024,0.8,20.0,Female,52.215039,21.032591
+Poland,Hedgehog,23/03/2024,0.5,19.0,Female,52.215085,21.034198
+Poland,Red Squirrel,23/03/2024,0.348,20.0,Female,50.04186,19.950192
+Hungary,Red Squirrel,23/03/2024,0.301,18.0,Male,47.51026,18.947838
+Czech Republic,Hedgehog,23/03/2024,0.7,20.0,Female,49.937454,14.182121
+Czech Republic,Hedgehog,23/03/2024,1.0,21.0,Female,49.937788,14.180368
+Poland,Red Squirrel,23/03/2024,0.348,20.0,Female,50.04186,19.950192
+Hungary,Red Squirrel,23/03/2024,0.301,18.0,Male,47.51026,18.947838
+Poland,Red Squirrel,24/03/2024,0.286,20.0,Female,50.04113,19.949698
+Poland,Red Squirrel,24/03/2024,0.282,21.0,Female,50.041522,19.950563
+Austria,Hedgehog,24/03/2024,0.8,18.0,Male,47.781882,14.384802
+Austria,Hedgehog,24/03/2024,0.6,19.0,Male,47.781019,14.385089
+Austria,Hedgehog,24/03/2024,0.5,20.0,Male,47.319782,11.190836
+Austria,Hedgehog,24/03/2024,0.6,16.0,Female,47.32002,11.18557
+Austria,Hedgehog,24/03/2024,0.6,20.0,Male,47.318793,11.185855
+Austria,Hedgehog,24/03/2024,1.1,23.0,Female,47.316963,11.188761
+Germany,Hedgehog,24/03/2024,0.8,16.0,Male,52.582072,13.149185
+Germany,Hedgehog,24/03/2024,1.2,23.0,Male,52.58572,13.148613
+Germany,Hedgehog,24/03/2024,0.7,19.0,Female,52.587827,13.148164
+Germany,Hedgehog,24/03/2024,0.9,151.0,Female,52.583004,13.150686
+Germany,Hedgehog,24/03/2024,1.2,22.0,Male,52.587058,13.149675
+Germany,Hedgehog,24/03/2024,0.7,16.0,Female,52.587539,13.146575
+Germany,Hedgehog,24/03/2024,0.6,25.0,Male,52.587183,13.146661
+Germany,Hedgehog,24/03/2024,1.0,24.0,Male,52.586487,13.150015
+Germany,Red Squirrel,24/03/2024,0.313,23.0,Female,52.588779,13.147948
+Germany,Red Squirrel,24/03/2024,0.268,21.0,Male,52.587089,13.151807
+Austria,Red Squirrel,24/03/2024,0.323,21.0,Male,47.781847,14.386835
+Austria,Red Squirrel,24/03/2024,0.272,20.0,Female,47.781296,14.383799
+Austria,Red Squirrel,24/03/2024,0.34,20.0,Male,47.781538,14.384561
+Austria,Red Squirrel,24/03/2024,0.332,18.0,Female,47.781345,14.382936
+Germany,Red Squirrel,24/03/2024,0.286,19.0,Female,52.582658,13.148057
+Czech Republic,Hedgehog,24/03/2024,0.8,18.0,Male,49.938688,14.179603
+Czech Republic,Red Squirrel,24/03/2024,0.336,22.0,Female,49.939212,14.180839
+Slovakia,Red Squirrel,24/03/2024,0.2,14.0,Female,48.186611,17.090271
+Poland,Red Squirrel,24/03/2024,0.286,20.0,Female,50.04113,19.949698
+Poland,Red Squirrel,24/03/2024,0.282,21.0,Female,50.041522,19.950563
+Poland,Hedgehog,25/03/2024,0.9,22.0,Female,52.214494,21.033154
+Poland,Hedgehog,25/03/2024,1.0,21.0,Male,52.214419,21.033441
+Czech Republic,Hedgehog,25/03/2024,0.4,12.0,Female,49.937893,14.18083
+Czech Republic,Red Squirrel,25/03/2024,0.336,23.0,Male,49.939262,14.179613
+Slovakia,Red Squirrel,25/03/2024,0.254,18.0,Male,48.239854,17.086693
+Slovakia,Red Squirrel,25/03/2024,0.294,23.0,Male,48.22668,17.081529
+Slovakia,Red Squirrel,25/03/2024,0.265,22.0,Female,48.23862,17.074393
+Poland,European Bison,26/03/2024,823.0,305.0,Male,52.82429,23.813465
+Poland,European Bison,26/03/2024,594.0,243.0,Male,52.825554,23.812594
+Poland,Red Squirrel,26/03/2024,0.31,24.0,Male,50.041235,19.951284
+Hungary,Red Squirrel,26/03/2024,-0.251,20.0,Female,47.508618,18.944915
+Czech Republic,Hedgehog,26/03/2024,0.7,16.0,Male,49.93915,14.179388
+Czech Republic,Hedgehog,26/03/2024,0.6,17.0,Female,49.938346,14.18024
+Poland,Red Squirrel,26/03/2024,0.31,24.0,Male,50.041235,19.951284
+Hungary,Red Squirrel,26/03/2024,-0.251,20.0,Female,47.508618,18.944915
+Poland,Hedgehog,27/03/2024,1.1,20.0,Female,52.214766,21.030532
+Poland,Red Squirrel,27/03/2024,0.336,19.0,Male,50.041489,19.950768
+Germany,Hedgehog,27/03/2024,0.7,23.0,Female,52.587532,13.152361
+Germany,Hedgehog,27/03/2024,0.7,17.0,Male,48.161584,11.494938
+Germany,Hedgehog,27/03/2024,0.9,18.0,Female,48.160459,11.493142
+Germany,Hedgehog,27/03/2024,0.5,20.0,Male,48.160834,11.489874
+Czech Republic,Hedgehog,27/03/2024,0.5,16.0,Male,49.938845,14.182246
+Czech Republic,Hedgehog,27/03/2024,0.8,17.0,Female,49.938959,14.180078
+Czech Republic,Red Squirrel,27/03/2024,0.277,22.0,Male,49.939097,14.179435
+Slovakia,Red Squirrel,27/03/2024,0.321,18.0,Female,48.226708,17.087853
+Czech Republic,Red Squirrel,27/03/2024,0.271,19.0,Female,49.938523,14.18244
+Poland,Red Squirrel,27/03/2024,0.336,19.0,Male,50.041489,19.950768
+Poland,European Bison,28/03/2024,510.0,222.0,Female,52.807537,23.700909
+Poland,Red Squirrel,28/03/2024,0.328,23.0,Female,50.041504,19.950218
+Poland,Red Squirrel,28/03/2024,0.278,23.0,Female,50.041119,19.94973
+Czech Republic,Hedgehog,28/03/2024,0.6,18.0,Female,49.937805,14.179716
+Czech Republic,Hedgehog,28/03/2024,0.7,15.0,Female,49.93933,14.177877
+Poland,Red Squirrel,28/03/2024,0.328,23.0,Female,50.041504,19.950218
+Poland,Red Squirrel,28/03/2024,0.278,23.0,Female,50.041119,19.94973
+Hungary,Red Squirrel,29/03/2024,0.273,23.0,Female,47.507157,18.940379
+Austria,Red Squirrel,29/03/2024,0.336,20.0,Female,47.780752,14.383452
+Austria,Red Squirrel,29/03/2024,0.29,19.0,Male,47.781078,14.384559
+Austria,Red Squirrel,29/03/2024,0.337,22.0,Male,47.781088,14.385534
+Slovakia,Hedgehog,29/03/2024,0.7,16.0,Male,48.409138,18.863577
+Slovakia,Lynx,29/03/2024,16.0,62.0,Female,48.409448,18.845591
+Hungary,Red Squirrel,29/03/2024,0.273,23.0,Female,47.507157,18.940379
+Poland,Red Squirrel,30/03/2024,0.289,24.0,Male,50.041382,19.949403
+Germany,Hedgehog,30/03/2024,1.1,25.0,Male,48.160773,11.49368
+Germany,Hedgehog,30/03/2024,0.6,15.0,Female,48.160813,11.492539
+Germany,Hedgehog,30/03/2024,0.5,20.0,Female,48.161605,11.49115
+Germany,Hedgehog,30/03/2024,0.7,20.0,Male,48.162593,11.491872
+Germany,Hedgehog,30/03/2024,0.6,15.0,Female,48.16142,11.495056
+Germany,Hedgehog,30/03/2024,0.5,16.0,Female,48.162549,11.492991
+Germany,Hedgehog,30/03/2024,0.9,19.0,Male,48.161646,11.493511
+Slovakia,Lynx,30/03/2024,21.0,85.0,Male,48.405213,18.84085
+Czech Republic,Red Squirrel,30/03/2024,0.288,18.0,Male,49.939,14.182239
+Slovakia,Red Squirrel,30/03/2024,0.287,21.0,Male,48.224897,17.085979
+Slovakia,Red Squirrel,30/03/2024,0.286,18.0,Male,48.228961,17.076478
+Poland,Red Squirrel,30/03/2024,0.289,24.0,Male,50.041382,19.949403
+Poland,European Bison,31/03/2024,970.0,307.0,Male,52.805402,23.691244
+Poland,Red Squirrel,31/03/2024,0.323,20.0,Female,50.041366,19.949444
+Hungary,Red Squirrel,31/03/2024,-0.25,19.0,Female,47.509538,18.945968
+Slovakia,Hedgehog,31/03/2024,0.9,19.0,Female,48.407464,18.87406
+Slovakia,Lynx,31/03/2024,20.0,78.0,Female,48.40979,18.870341
+Poland,Red Squirrel,31/03/2024,0.323,20.0,Female,50.041366,19.949444
+Hungary,Red Squirrel,31/03/2024,-0.25,19.0,Female,47.509538,18.945968
+Poland,European Bison,01/04/2024,459.0,212.0,Female,52.807403,23.683044
+Poland,European Bison,01/04/2024,705.0,280.0,Female,52.803733,23.686928
+Poland,Red Squirrel,01/04/2024,0.323,19.0,Female,50.041804,19.951361
+Hungary,Red Squirrel,01/04/2024,0.337,18.0,Female,47.511558,18.942454
+Slovakia,Hedgehog,01/04/2024,1.1,22.0,Male,48.409754,18.870477
+Czech Republic,Lynx,01/04/2024,26.0,81.0,Female,50.884012,14.370554
+Czech Republic,Red Squirrel,01/04/2024,0.283,22.0,Female,49.939191,14.180256
+Slovakia,Red Squirrel,01/04/2024,0.26,22.0,Female,48.23123,17.090253
+Poland,Red Squirrel,01/04/2024,0.323,19.0,Female,50.041804,19.951361
+Hungary,Red Squirrel,01/04/2024,0.337,18.0,Female,47.511558,18.942454
+Hungary,Hedgehog,02/04/2024,0.6,20.0,Female,48.504425,20.548744
+Poland,Lynx,02/04/2024,22.0,101.0,Male,52.824599,23.816842
+Poland,Red Squirrel,02/04/2024,0.294,19.0,Male,50.041131,19.949543
+Poland,Red Squirrel,02/04/2024,,,Male,50.041552,19.949984
+Poland,Red Squirrel,02/04/2024,0.312,23.0,Female,50.041945,19.94932
+Poland,Red Squirrel,02/04/2024,0.29,24.0,Male,50.041925,19.950894
+Hungary,Red Squirrel,02/04/2024,0.258,21.0,Female,47.511582,18.942341
+Austria,Hedgehog,02/04/2024,0.8,15.0,Female,47.319091,11.188058
+Germany,Hedgehog,02/04/2024,0.8,18.0,Male,48.161892,11.493888
+Germany,Hedgehog,02/04/2024,0.6,15.0,Female,48.161218,11.494677
+Germany,Hedgehog,02/04/2024,0.8,23.0,Male,48.161452,11.495239
+Germany,Hedgehog,02/04/2024,0.6,16.0,Female,48.160915,11.489927
+Germany,Hedgehog,02/04/2024,0.7,19.0,Male,48.162169,11.495473
+Germany,Hedgehog,02/04/2024,1.0,25.0,Female,49.54629,11.085729
+Germany,Hedgehog,02/04/2024,1.1,23.0,Male,49.559558,11.08115
+Austria,Red Squirrel,02/04/2024,0.273,19.0,Female,47.781613,14.385153
+Austria,Red Squirrel,02/04/2024,0.33,18.0,Female,47.781637,14.385383
+Austria,Red Squirrel,02/04/2024,0.262,18.0,Female,47.781838,14.382938
+Austria,Red Squirrel,02/04/2024,0.31,19.0,Female,47.780925,14.383695
+Austria,Red Squirrel,02/04/2024,0.334,21.0,Female,47.781449,14.383421
+Austria,Red Squirrel,02/04/2024,0.27,20.0,Female,47.7818,14.383699
+Austria,Red Squirrel,02/04/2024,0.277,18.0,Male,47.781073,14.383506
+Germany,Red Squirrel,02/04/2024,0.258,19.0,Male,48.162251,11.494811
+Germany,Red Squirrel,02/04/2024,0.256,16.0,Female,48.160432,11.494472
+Germany,Red Squirrel,02/04/2024,0.317,21.0,Female,48.162563,11.495277
+Germany,Red Squirrel,02/04/2024,0.266,18.0,Female,48.161906,11.490434
+Germany,Red Squirrel,02/04/2024,0.283,21.0,Male,49.562324,11.092212
+Germany,Red Squirrel,02/04/2024,0.305,18.0,Female,49.561973,11.086554
+Austria,Red Squirrel,02/04/2024,0.282,18.0,Male,47.781755,14.385083
+Germany,Red Squirrel,02/04/2024,0.318,18.0,Male,49.557527,11.089447
+Slovakia,Lynx,02/04/2024,27.0,94.0,Female,48.411163,18.864362
+Slovakia,Red Squirrel,02/04/2024,0.339,20.0,Male,48.410771,18.865888
+Slovakia,Red Squirrel,02/04/2024,0.302,19.0,Male,48.410201,18.862513
+Slovakia,Red Squirrel,02/04/2024,0.276,19.0,Male,48.408111,18.865646
+Slovakia,Red Squirrel,02/04/2024,0.252,19.0,Female,48.410932,18.861704
+Slovakia,Red Squirrel,02/04/2024,0.293,19.0,Male,48.227614,17.072903
+Poland,Red Squirrel,02/04/2024,0.294,19.0,Male,50.041131,19.949543
+Poland,Red Squirrel,02/04/2024,,,Male,50.041552,19.949984
+Poland,Red Squirrel,02/04/2024,0.312,23.0,Female,50.041945,19.94932
+Poland,Red Squirrel,02/04/2024,0.29,24.0,Male,50.041925,19.950894
+Hungary,Red Squirrel,02/04/2024,0.258,21.0,Female,47.511582,18.942341
+Hungary,Red Squirrel,03/04/2024,0.286,18.0,Male,47.50826,18.948349
+Germany,Hedgehog,03/04/2024,1.2,22.0,Male,49.551211,11.077661
+Germany,Hedgehog,03/04/2024,0.9,23.0,Female,49.562583,11.082312
+Germany,Hedgehog,03/04/2024,0.7,23.0,Female,49.547597,11.079679
+,,03/04/2024,,,,,
+Slovakia,Hedgehog,03/04/2024,1.2,26.0,Male,48.40912,18.869274
+Czech Republic,Red Squirrel,03/04/2024,0.258,21.0,Female,49.938787,14.178284
+Hungary,Red Squirrel,03/04/2024,0.286,18.0,Male,47.50826,18.948349
+Poland,European Bison,04/04/2024,1000.0,295.0,Male,52.809543,23.708564
+Hungary,Hedgehog,04/04/2024,0.7,23.0,Female,47.508516,18.949429
+Hungary,Hedgehog,04/04/2024,1.2,24.0,Male,47.508941,18.948915
+Poland,Red Squirrel,04/04/2024,0.337,22.0,Female,50.041819,19.951542
+Poland,Red Squirrel,04/04/2024,0.272,23.0,Female,50.0418,19.950244
+Hungary,Red Squirrel,04/04/2024,0.262,22.0,Male,47.508905,18.94657
+Poland,Red Squirrel,04/04/2024,0.337,22.0,Female,50.041819,19.951542
+Poland,Red Squirrel,04/04/2024,0.272,23.0,Female,50.0418,19.950244
+Hungary,Red Squirrel,04/04/2024,0.262,22.0,Male,47.508905,18.94657
+Poland,European Bison,05/04/2024,557.0,255.0,Female,52.811204,23.697814
+Hungary,Hedgehog,05/04/2024,0.8,17.0,Female,47.507073,18.947873
+Austria,Hedgehog,05/04/2024,0.9,22.0,Female,47.31758,11.187606
+Austria,Hedgehog,05/04/2024,0.8,16.0,Male,47.31947,11.18573
+Austria,Hedgehog,05/04/2024,0.7,18.0,Male,47.319812,11.18479
+Austria,Hedgehog,05/04/2024,0.8,20.0,Female,47.316383,11.188381
+Austria,Red Squirrel,05/04/2024,0.299,20.0,Female,47.781131,14.382207
+Australia,Red Squirrel,05/04/2024,0.266,20.0,Female,47.781632,14.382365
+Austria,Red Squirrel,05/04/2024,0.308,18.0,Male,47.780904,14.385669
+Austria,Red Squirrel,05/04/2024,0.264,22.0,Male,47.781089,14.385211
+Austria,Red Squirrel,05/04/2024,0.322,20.0,Male,47.781333,14.382547
+Austria,Red Squirrel,05/04/2024,0.332,18.0,Female,47.780927,14.382188
+Austria,Red Squirrel,05/04/2024,0.253,21.0,Male,47.856032,15.076768
+Germany,Red Squirrel,05/04/2024,0.317,20.0,Female,49.545913,11.081051
+Germany,Red Squirrel,05/04/2024,0.327,20.0,Male,49.550428,11.077659
+Germany,Red Squirrel,05/04/2024,0.255,19.0,Female,49.558869,11.076638
+Slovakia,Hedgehog,05/04/2024,0.8,21.0,Female,48.412408,18.869074
+Czech Republic,Lynx,05/04/2024,15.0,70.0,Male,50.883894,14.372364
+Slovakia,Red Squirrel,05/04/2024,0.3,19.0,Female,48.229837,17.089218
+Poland,European Buster,06/04/2024,589.0,279.0,Female,52.808704,23.705504
+Hungary,Hedgehog,06/04/2024,0.7,16.0,Female,47.510231,18.940042
+Hungary,Hedgehog,06/04/2024,0.8,14.0,Female,47.509073,18.946838
+Poland,Red Squirrel,06/04/2024,0.348,23.0,Male,50.041252,19.950033
+Austria,Red Squirrel,06/04/2024,0.294,22.0,Male,47.855007,15.076539
+Germany,Red Squirrel,06/04/2024,0.299,19.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.314,19.0,Female,,
+Germany,Red Squirrel,06/04/2024,0.297,20.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.298,21.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.301,19.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.267,20.0,Female,,
+Germany,Red Squirrel,06/04/2024,0.315,21.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.3,21.0,Female,,
+Germany,Red Squirrel,06/04/2024,0.3,21.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.264,22.0,Female,,
+Germany,Red Squirrel,06/04/2024,0.251,21.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.302,22.0,Female,,
+Germany,Red Squirrel,06/04/2024,0.262,22.0,Female,,
+Germany,Red Squirrel,06/04/2024,0.301,20.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.243,19.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.314,20.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.244,20.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.25,22.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.272,20.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.289,20.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.315,20.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.304,21.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.241,19.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.248,22.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.243,19.0,Male,,
+Germany,Red Squirrel,06/04/2024,0.29,21.0,Male,,
+Austria,,06/04/2024,0.319,20.0,Male,,
+Austria,,06/04/2024,0.292,19.0,Female,,
+Austria,,06/04/2024,0.319,19.0,Female,,
+Austria,,06/04/2024,0.298,20.0,Male,,
+Austria,,06/04/2024,0.255,22.0,Male,,
+Austria,,06/04/2024,0.3,20.0,Male,,
+Austria,,06/04/2024,0.252,21.0,Male,,
+Slovakia,Hedgehog,06/04/2024,0.8,17.0,Male,48.409645,18.872415
+Czech Republic,Lynx,06/04/2024,26.0,88.0,Female,50.883881,14.373018
+Czech Republic,Red Squirrel,06/04/2024,0.316,23.0,Female,49.93931,14.181266
+Czech Republic,Red Squirrel,06/04/2024,0.327,21.0,Male,49.938616,14.181291
+Czech Republic,Red Squirrel,06/04/2024,0.288,18.0,Male,49.937839,14.179075
+Czech Republic,Red Squirrel,06/04/2024,0.313,22.0,Female,49.939308,14.180747
+Poland,Red Squirrel,06/04/2024,0.348,23.0,Male,50.041252,19.950033
+Poland,European Bison,07/04/2024,1100.0,350.0,Male,52.803316,23.686301
+Hungary,Hedgehog,07/04/2024,0.9,16.0,Female,47.506638,18.940091
+Poland,Lynx,07/04/2024,23.0,73.0,Male,52.823016,23.812286
+Hungary,Red Squirrel,07/04/2024,0.319,18.0,Male,47.508665,18.940456
+Hungary,Red Squirrel,07/04/2024,0.28,21.0,Female,47.510978,18.942963
+Austria,Red Squirrel,07/04/2024,0.264,22.0,Female,47.857586,15.081328
+Austria,Red Squirrel,07/04/2024,0.334,19.0,Male,47.856971,15.078984
+Austria,Red Squirrel,07/04/2024,0.278,21.0,Male,47.856769,15.076411
+Austria,Red Squirrel,07/04/2024,0.333,22.0,Female,47.855379,15.077237
+Austria,Red Squirrel,07/04/2024,0.323,23.0,Male,47.856015,15.08325
+Slovakia,Hedgehog,07/04/2024,1.1,16.0,Female,48.413154,18.875356
+Hungary,Red Squirrel,07/04/2024,0.319,18.0,Male,47.508665,18.940456
+Hungary,Red Squirrel,07/04/2024,0.28,21.0,Female,47.510978,18.942963
+Poland,Red Squirrel,08/04/2024,0.265,22.0,Female,50.041147,19.95046
+Austria,Red Squirrel,08/04/2024,0.27,23.0,Female,47.853881,15.078367
+Austria,Red Squirrel,08/04/2024,0.299,19.0,Female,47.854855,15.082168
+Austria,Red Squirrel,08/04/2024,0.3,21.0,Male,47.855216,15.078877
+Austria,Red Squirrel,08/04/2024,0.338,19.0,Male,47.857495,15.07895
+Austria,Red Squirrel,08/04/2024,0.285,21.0,Female,47.853875,15.078745
+Austria,Red Squirrel,08/04/2024,0.333,19.0,Female,47.854756,15.082892
+Austria,Red Squirrel,08/04/2024,0.323,23.0,Male,47.854099,15.076812
+Czech Republic,European Bison,08/04/2024,560.0,250.0,Female,50.645077,14.840304
+Slovakia,Hedgehog,08/04/2024,1.1,25.0,Male,48.41259,18.87302
+Slovakia,Red Squirrel,08/04/2024,-0.252,21.0,Male,49.057599,22.422203
+Slovakia,Red Squirrel,08/04/2024,0.26,18.0,Male,49.053175,22.414666
+Slovakia,Red Squirrel,08/04/2024,0.329,20.0,Male,49.054663,22.412082
+Slovakia,Red Squirrel,08/04/2024,0.33,21.0,Female,49.055275,22.41421
+Slovakia,Red Squirrel,08/04/2024,0.271,23.0,Male,49.052914,22.42299
+Slovakia,Red Squirrel,08/04/2024,0.298,18.0,Female,49.055453,22.423536
+Slovakia,Red Squirrel,08/04/2024,0.281,23.0,Male,49.056583,22.415432
+Slovakia,Red Squirrel,08/04/2024,0.316,22.0,Female,49.054586,22.41368
+Slovakia,Red Squirrel,08/04/2024,0.265,18.0,Male,49.056946,22.424916
+Poland,Red Squirrel,08/04/2024,0.265,22.0,Female,50.041147,19.95046
+Poland,Red Squirrel,09/04/2024,0.296,22.0,Male,50.041497,19.950657
+Hungary,Red Squirrel,09/04/2024,0.257,20.0,Female,47.509375,18.939808
+Czech Republic,Red Squirrel,09/04/2024,0.313,21.0,Male,49.937425,14.182723
+Czech Republic,Red Squirrel,09/04/2024,0.282,19.0,Female,49.939072,14.180063
+Poland,Red Squirrel,09/04/2024,0.296,22.0,Male,50.041497,19.950657
+Hungary,Red Squirrel,09/04/2024,0.257,20.0,Female,47.509375,18.939808
+Poland,European Bison,10/04/2024,486.0,235.0,Female,52.809086,23.696425
+Poland,Lynx,10/04/2024,22.0,78.0,Male,52.821625,23.818063
+Slovakia,Hedgehog,10/04/2024,1.2,26.0,Male,48.409469,18.861715
+Czech Republic,Red Squirrel,10/04/2024,0.257,21.0,Male,50.107147,14.347009
+Poland,European Bison,11/04/2024,610.0,281.0,Female,52.810989,23.689137
+Hungary,Hedgehog,11/04/2024,0.8,17.0,Female,47.507081,18.939062
+Poland,Red Squirrel,11/04/2024,0.325,20.0,Female,50.041347,19.950773
+Hungary,Red Squirrel,11/04/2024,0.275,21.0,Female,47.506071,18.949311
+Hungary,Red Squirrel,11/04/2024,0.285,20.0,Male,47.509655,18.943576
+Australia,Red Squirrel,11/04/2024,0.31,23.0,Male,47.856092,15.083547
+Austria,Red Squirrel,11/04/2024,0.256,19.0,Male,47.854876,15.08295
+Austria,Red Squirrel,11/04/2024,0.285,23.0,Male,47.857535,15.078083
+Germany,Red Squirrel,11/04/2024,0.303,19.0,Female,48.162437,11.494298
+Germany,Red Squirrel,11/04/2024,0.273,19.0,Male,48.161106,11.48991
+Germany,Red Squirrel,11/04/2024,0.267,22.0,Female,48.161385,11.492571
+Germany,Red Squirrel,11/04/2024,0.258,20.0,Female,48.162137,11.494415
+Germany,Red Squirrel,11/04/2024,0.296,18.0,Male,48.162162,11.493917
+Slovakia,Lynx,11/04/2024,22.0,88.0,Male,48.40855,18.864935
+Czech Republic,Red Squirrel,11/04/2024,0.308,22.0,Female,50.106721,14.346231
+Poland,Red Squirrel,11/04/2024,0.325,20.0,Female,50.041347,19.950773
+Hungary,Red Squirrel,11/04/2024,0.275,21.0,Female,47.506071,18.949311
+Hungary,Red Squirrel,11/04/2024,0.285,20.0,Male,47.509655,18.943576
+Poland,European Bison,12/04/2024,853.0,287.0,Male,52.80356,23.690378
+Germany,Red Squirrel,12/04/2024,0.302,18.0,Female,48.160992,11.495374
+Slovakia,Hedgehog,12/04/2024,1.0,20.0,Female,48.408713,18.863829
+Czech Republic,Red Squirrel,12/04/2024,0.325,21.0,Female,50.106483,14.348192
+Hungary,Hedgehog,13/04/2024,1.2,23.0,Male,47.511267,18.940191
+Poland,Red Squirrel,13/04/2024,0.264,20.0,Male,50.041366,19.949936
+Poland,Red Squirrel,13/04/2024,,,Male,50.041573,19.94985
+Poland,Red Squirrel,13/04/2024,0.32,23.0,Female,50.041554,19.95113
+Poland,Red Squirrel,13/04/2024,0.298,23.0,Male,52.211967,21.032924
+Slovakia,Hedgehog,13/04/2024,0.8,23.0,Male,48.412843,18.872614
+Slovakia,Hedgehog,13/04/2024,0.8,16.0,Male,48.407138,18.867247
+Poland,Red Squirrel,13/04/2024,0.264,20.0,Male,50.041366,19.949936
+Poland,Red Squirrel,13/04/2024,,,Male,50.041573,19.94985
+Poland,Red Squirrel,13/04/2024,0.32,23.0,Female,50.041554,19.95113
+Poland,Red Squirrel,13/04/2024,0.298,23.0,Male,52.211967,21.032924
+Hungary,Hedgehog,14/04/2024,0.4,17.0,Female,47.509261,18.949967
+Poland,Lynx,14/04/2024,20.0,90.0,Female,52.824608,23.817396
+Hungary,Red Squirrel,14/04/2024,0.297,18.0,Male,47.506306,18.946099
+Hungary,Red Squirrel,14/04/2024,0.308,20.0,Female,47.510068,18.947176
+Hungary,Red Squirrel,14/04/2024,0.268,19.0,Male,47.51106,18.939832
+Germany,Red Squirrel,14/04/2024,0.259,22.0,Male,48.160831,11.492403
+Hungary,Red Squirrel,14/04/2024,0.297,18.0,Male,47.506306,18.946099
+Hungary,Red Squirrel,14/04/2024,0.308,20.0,Female,47.510068,18.947176
+Hungary,Red Squirrel,14/04/2024,0.268,19.0,Male,47.51106,18.939832
+Poland,European Bison,15/04/2024,700.0,286.0,Male,52.808503,23.69937
+Hungary,Hedgehog,15/04/2024,0.7,15.0,Male,47.511427,18.948714
+Poland,Red Squirrel,15/04/2024,0.278,21.0,Female,52.211888,21.03235
+Germany,Red Squirrel,15/04/2024,0.339,19.0,Female,48.161422,11.491813
+Germany,Red Squirrel,15/04/2024,0.307,22.0,Male,48.16079,11.489549
+Germany,Red Squirrel,15/04/2024,0.256,20.0,Female,48.161009,11.491557
+Germany,Red Squirrel,15/04/2024,0.29,20.0,Male,48.160807,11.494219
+Germany,Red Squirrel,15/04/2024,0.323,18.0,Female,48.161794,11.494325
+Germany,Red Squirrel,15/04/2024,0.293,21.0,Male,48.161069,11.49303
+Germany,Red Squirrel,15/04/2024,0.326,18.0,Female,48.16087,11.49027
+Germany,Red Squirrel,15/04/2024,0.266,21.0,Female,48.16056,11.490806
+Slovakia,Hedgehog,15/04/2024,0.5,18.0,Female,48.409909,18.867006
+Czech Republic,Red Squirrel,15/04/2024,0.317,19.0,Male,50.106373,14.347574
+Poland,Red Squirrel,15/04/2024,0.278,21.0,Female,52.211888,21.03235
+Hungary,Hedgehog,16/04/2024,0.5,19.0,Female,47.50643,18.947912
+Hungary,Hedgehog,16/04/2024,0.6,15.0,Male,47.506663,18.94032
+Hungary,Red Squirrel,16/04/2024,0.254,20.0,Female,47.508169,18.947418
+Germany,Red Squirrel,16/04/2024,0.313,19.0,Male,48.161902,11.49458
+Germany,Red Squirrel,16/04/2024,0.2,14.0,Male,49.554765,11.0922
+Germany,Red Squirrel,16/04/2024,0.278,18.0,Female,49.558466,11.096048
+Slovakia,Hedgehog,16/04/2024,0.6,25.0,Male,48.407605,18.876341
+Hungary,Red Squirrel,16/04/2024,0.254,20.0,Female,47.508169,18.947418
+Poland,Red Squirrel,17/04/2024,0.298,19.0,Female,52.212379,21.032913
+Germany,Hedgehog,17/04/2024,0.7,21.0,Male,49.556052,11.081501
+Germany,Hedgehog,17/04/2024,1.2,28.0,Male,49.55152,11.079537
+Germany,Hedgehog,17/04/2024,0.5,18.0,Female,49.553737,11.087705
+Germany,Hedgehog,17/04/2024,1.0,20.0,Male,49.560442,11.098395
+Germany,Hedgehog,17/04/2024,0.9,25.0,Male,49.560723,11.084667
+Germany,Hedgehog,17/04/2024,0.4,16.0,Female,49.55879,11.081218
+Germany,Red Squirrel,17/04/2024,0.294,20.0,Male,49.545857,11.076254
+Germany,Red Squirrel,17/04/2024,0.3,23.0,Female,49.554685,11.08345
+Slovakia,Hedgehog,17/04/2024,1.1,23.0,Male,48.186112,17.090491
+Slovakia,Lynx,17/04/2024,27.0,100.0,Male,48.411117,18.862265
+Czech Republic,Red Squirrel,17/04/2024,0.283,22.0,Female,50.106413,14.348204
+Czech Republic,Red Squirrel,17/04/2024,0.28,22.0,Female,50.107135,14.348206
+Poland,Red Squirrel,17/04/2024,0.298,19.0,Female,52.212379,21.032913
+Poland,European Bison,18/04/2024,405.0,220.0,Female,52.804031,23.683032
+Germany,Hedgehog,18/04/2024,1.0,24.0,Male,49.561057,11.084334
+Germany,Hedgehog,18/04/2024,0.6,11.0,Male,49.557055,11.101996
+Germany,Hedgehog,18/04/2024,0.7,25.0,Male,49.554133,11.089674
+Germany,Hedgehog,18/04/2024,0.6,22.0,Female,49.561174,11.102216
+Germany,Hedgehog,18/04/2024,0.5,20.0,Male,49.563085,11.101392
+Germany,Hedgehog,18/04/2024,0.9,25.0,Male,49.551318,11.085475
+Germany,Hedgehog,18/04/2024,0.5,16.0,Female,49.556237,11.088639
+Germany,Hedgehog,18/04/2024,0.8,17.0,Male,49.545768,11.086386
+Czech Republic,Red Squirrel,18/04/2024,0.326,23.0,Male,50.107313,14.348552
+Poland,European Bison,19/04/2024,662.0,244.0,Female,52.809106,23.680095
+Poland,Red Squirrel,19/04/2024,0.341,23.0,Male,52.212042,21.033492
+Austria,Hedgehog,19/04/2024,0.6,17.0,Female,47.319579,11.186061
+Austria,Hedgehog,19/04/2024,0.9,25.0,Male,47.317974,11.187472
+Austria,Hedgehog,19/04/2024,1.1,22.0,Male,47.316562,11.19116
+Austria,Hedgehog,19/04/2024,1.2,24.0,Male,47.318191,11.189484
+Czech Republic,European Bison,19/04/2024,656.0,245.0,Female,50.643056,14.843037
+Slovakia,Hedgehog,19/04/2024,1.1,19.0,Female,48.187522,17.087251
+Slovakia,Hedgehog,19/04/2024,1.1,29.0,Male,48.185406,17.084535
+Czech Republic,Lynx,19/04/2024,12.0,52.0,Male,-78.582972,14.367993
+Slovakia,Lynx,19/04/2024,24.0,81.0,Female,48.408549,18.87396
+Czech Republic,Lynx,19/04/2024,22.0,83.0,Female,50.882924,14.368207
+Poland,Red Squirrel,19/04/2024,0.341,23.0,Male,52.212042,21.033492
+Poland,Red Squirrel,20/04/2024,0.327,23.0,Male,52.212168,21.032304
+Poland,Red Squirrel,20/04/2024,0.337,24.0,Female,52.211797,21.03375
+Poland,Red Squirrel,20/04/2024,0.318,24.0,Male,52.21247,21.033642
+Poland,Red Squirrel,20/04/2024,0.33,23.0,Male,52.211872,21.032296
+Poland,Red Squirrel,20/04/2024,0.327,23.0,Male,52.212168,21.032304
+Poland,Red Squirrel,20/04/2024,0.337,24.0,Female,52.211797,21.03375
+Poland,Red Squirrel,20/04/2024,0.318,24.0,Male,52.21247,21.033642
+Poland,Red Squirrel,20/04/2024,0.33,23.0,Male,52.211872,21.032296
+Poland,European Bison,21/04/2024,776.0,294.0,Male,52.805299,23.701093
+Slovakia,Hedgehog,21/04/2024,0.8,18.0,Male,48.186208,17.089749
+Poland,Red Squirrel,22/04/2024,0.306,19.0,Female,52.212605,21.033877
+Poland,Red Squirrel,22/04/2024,0.349,20.0,Female,52.212001,21.033903
+Czech Republic,Lynx,22/04/2024,23.0,78.0,Male,-78.582973,14.366824
+Poland,Red Squirrel,22/04/2024,0.306,19.0,Female,52.212605,21.033877
+Poland,Red Squirrel,22/04/2024,0.349,20.0,Female,52.212001,21.033903
+Slovakia,Hedgehog,23/04/2024,0.7,16.0,Male,48.184231,17.091694
+Poland,European Bison,24/04/2024,650.0,286.0,Female,52.812486,23.686231
+Poland,Red Squirrel,24/04/2024,0.271,19.0,Female,52.211797,21.032857
+Poland,Red Squirrel,24/04/2024,0.329,24.0,Female,52.212045,21.031986
+Austria,Lynx,24/04/2024,20.0,90.0,Male,47.781188,14.385356
+Austria,Lynx,24/04/2024,26.0,91.0,Female,47.780999,14.38212
+Slovakia,Hedgehog,24/04/2024,0.6,15.0,Female,48.185648,17.083763
+Poland,Red Squirrel,24/04/2024,0.271,19.0,Female,52.211797,21.032857
+Poland,Red Squirrel,24/04/2024,0.329,24.0,Female,52.212045,21.031986
+Poland,Lynx,25/04/2024,14.0,65.0,Female,52.851841,23.89158
+Poland,Red Squirrel,25/04/2024,0.311,21.0,Male,52.212203,21.032279
+Poland,Red Squirrel,25/04/2024,0.311,21.0,Male,52.212203,21.032279
+Slovakia,Hedgehog,26/04/2024,0.7,16.0,Male,48.185433,17.086216
+Poland,Red Squirrel,27/04/2024,0.29,24.0,Female,52.212763,21.032786
+Slovakia,Hedgehog,27/04/2024,1.2,22.0,Male,48.186913,17.088174
+Slovakia,Hedgehog,27/04/2024,0.7,24.0,Female,48.185649,17.088834
+Poland,Red Squirrel,27/04/2024,0.29,24.0,Female,52.212763,21.032786
+Poland,Lynx,28/04/2024,12.0,52.0,Male,52.848214,23.891978
+Poland,Lynx,28/04/2024,27.0,95.0,Female,52.853843,23.919668
+Poland,Red Squirrel,28/04/2024,0.312,23.0,Male,52.21212,21.034268
+Germany,Hedgehog,28/04/2024,0.5,20.0,Male,49.55324,11.074008
+Germany,Hedgehog,28/04/2024,1.1,20.0,Female,49.551562,11.081737
+Germany,Hedgehog,28/04/2024,0.6,18.0,Male,49.547376,11.079529
+Germany,Hedgehog,28/04/2024,0.8,20.0,Male,49.560178,11.093259
+Germany,Hedgehog,28/04/2024,0.8,19.0,Male,49.558968,11.106642
+Slovakia,Hedgehog,28/04/2024,0.9,20.0,Male,48.18637,17.090384
+Poland,Red Squirrel,28/04/2024,0.312,23.0,Male,52.21212,21.034268
+Hungary,Hedgehog,29/04/2024,0.6,16.0,Female,47.506035,18.944528
+Poland,Red Squirrel,29/04/2024,0.27,21.0,Female,52.21239,21.034548
+Slovakia,Hedgehog,29/04/2024,1.1,23.0,Male,48.183848,17.082806
+Slovakia,Lynx,29/04/2024,22.0,73.0,Male,48.410551,18.864866
+Poland,Red Squirrel,29/04/2024,0.27,21.0,Female,52.21239,21.034548
+Poland,Red Squirrel,30/04/2024,0.292,20.0,Female,52.212433,21.032496
+Poland,Red Squirrel,30/04/2024,0.292,20.0,Female,52.212433,21.032496
+,,03/05/2024,,,,,
+Poland,Red Squirrel,09/05/2024,0.305,19.0,Female,52.212746,21.033832
+Slovakia,Hedgehog,09/05/2024,0.7,22.0,Male,48.23276,17.069049
+Poland,Red Squirrel,09/05/2024,0.305,19.0,Female,52.212746,21.033832
+Hungary,Hedgehog,10/05/2024,0.7,16.0,Male,47.509595,18.939751
+Hungary,Hedgehog,10/05/2024,1.0,20.0,Male,47.511301,18.93974
+Poland,Red Squirrel,11/05/2024,0.264,21.0,Male,52.212148,21.033421
+Germany,Hedgehog,11/05/2024,0.7,24.0,Male,49.56023,11.102233
+Germany,Hedgehog,11/05/2024,1.1,19.0,Female,49.54841,11.078249
+Slovakia,Hedgehog,11/05/2024,0.8,24.0,Female,48.239628,17.087298
+Poland,Red Squirrel,11/05/2024,0.264,21.0,Male,52.212148,21.033421
+Hungary,Hedgehog,12/05/2024,1.0,23.0,Female,47.507376,18.9396
+Poland,Red Squirrel,12/05/2024,0.266,20.0,Male,52.212429,21.032435
+Slovakia,Hedgehog,12/05/2024,0.5,19.0,Male,48.231939,17.087688
+Poland,Red Squirrel,12/05/2024,0.266,20.0,Male,52.212429,21.032435
+Poland,Red Squirrel,13/05/2024,0.266,21.0,Female,52.21284,21.034377
+Poland,Red Squirrel,13/05/2024,0.317,20.0,Female,52.212163,21.032633
+Slovakia,Hedgehog,13/05/2024,1.0,18.0,Male,48.225014,17.081449
+Poland,Red Squirrel,13/05/2024,0.266,21.0,Female,52.21284,21.034377
+Poland,Red Squirrel,13/05/2024,0.317,20.0,Female,52.212163,21.032633
+Hungary,Hedgehog,14/05/2024,0.6,17.0,Female,47.506311,18.947371
+Poland,Red Squirrel,14/05/2024,0.27,23.0,Female,52.212553,21.032768
+Slovakia,Hedgehog,14/05/2024,0.7,22.0,Female,48.225116,17.086408
+Poland,Red Squirrel,14/05/2024,0.27,23.0,Female,52.212553,21.032768
+Poland,Red Squirrel,15/05/2024,0.279,22.0,Male,52.212411,21.033173
+Poland,Red Squirrel,15/05/2024,0.279,22.0,Male,52.212411,21.033173
+Hungary,Hedgehog,16/05/2024,1.0,18.0,Female,47.507019,18.944015
+Slovakia,Hedgehog,16/05/2024,0.4,13.0,Male,48.237386,17.078352
+Hungary,Hedgehog,17/05/2024,,,Male,47.510077,18.945646
+Hungary,Hedgehog,17/05/2024,0.7,11.0,Female,47.507758,18.949223
+Poland,Red Squirrel,17/05/2024,0.28,19.0,Female,52.212542,21.033829
+Poland,Red Squirrel,17/05/2024,0.26,19.0,Male,52.212628,21.034494
+Poland,Red Squirrel,17/05/2024,0.294,24.0,Female,52.21294,21.034208
+Slovakia,Hedgehog,17/05/2024,0.6,20.0,Male,48.235981,17.081698
+Slovakia,Hedgehog,17/05/2024,0.8,16.0,Female,48.23493,17.084813
+Slovakia,Lynx,17/05/2024,18.0,76.0,Male,48.412724,18.868878
+Poland,Red Squirrel,17/05/2024,0.28,19.0,Female,52.212542,21.033829
+Poland,Red Squirrel,17/05/2024,0.26,19.0,Male,52.212628,21.034494
+Poland,Red Squirrel,17/05/2024,0.294,24.0,Female,52.21294,21.034208
+Poland,Red Squirrel,18/05/2024,0.306,21.0,Male,52.211896,21.033806
+Poland,Red Squirrel,18/05/2024,0.277,22.0,Male,52.211924,21.033243
+Poland,Red Squirrel,18/05/2024,0.306,21.0,Male,52.211896,21.033806
+Poland,Red Squirrel,18/05/2024,0.277,22.0,Male,52.211924,21.033243
+Hungary,Hedgehog,19/05/2024,1.1,22.0,Female,47.510584,18.94173
+Slovakia,Hedgehog,19/05/2024,0.6,19.0,Female,48.236605,17.071495
+Slovakia,Lynx,19/05/2024,22.0,85.0,Male,48.411436,18.86478
+Poland,Red Squirrel,20/05/2024,0.341,21.0,Female,52.212295,21.034039
+Poland,Red Squirrel,20/05/2024,0.341,21.0,Female,52.212295,21.034039
+Poland,Red Squirrel,21/05/2024,0.338,22.0,Female,52.212915,21.033226
+Poland,Red Squirrel,21/05/2024,0.311,19.0,Female,52.212601,21.032613
+Slovakia,Hedgehog,21/05/2024,1.2,25.0,Male,48.231497,17.073128
+Slovakia,Hedgehog,21/05/2024,0.4,16.0,Female,48.238634,17.074895
+Poland,Red Squirrel,21/05/2024,0.338,22.0,Female,52.212915,21.033226
+Poland,Red Squirrel,21/05/2024,0.311,19.0,Female,52.212601,21.032613
+Poland,Red Squirrel,22/05/2024,0.308,23.0,Male,52.212245,21.032988
+Poland,Red Squirrel,22/05/2024,0.308,22.0,Female,52.212583,21.032932
+Poland,Red Squirrel,22/05/2024,0.308,23.0,Male,52.212245,21.032988
+Poland,Red Squirrel,22/05/2024,0.308,22.0,Female,52.212583,21.032932
+Poland,Red Squirrel,23/05/2024,0.29,23.0,Male,52.212065,21.034571
+Slovakia,Hedgehog,23/05/2024,0.5,16.0,Male,48.231214,17.084105
+Czech Republic,Lynx,23/05/2024,21.0,91.0,Female,50.881878,14.371969
+Poland,Red Squirrel,23/05/2024,0.29,23.0,Male,52.212065,21.034571
+Poland,Red Squirrel,24/05/2024,0.346,22.0,Female,52.212305,21.033921
+Slovakia,Hedgehog,24/05/2024,0.7,20.0,Female,48.231411,17.075484
+Poland,Red Squirrel,24/05/2024,0.346,22.0,Female,52.212305,21.033921
+Poland,Red Squirrel,25/05/2024,,,Male,52.212906,21.03321
+Poland,Red Squirrel,25/05/2024,,,Male,52.212906,21.03321
+Poland,Red Squirrel,26/05/2024,0.327,24.0,Female,52.82211,23.814403
+Slovakia,Hedgehog,26/05/2024,0.8,18.0,Male,48.237588,17.090344
+Poland,Red Squirrel,26/05/2024,0.327,24.0,Female,52.82211,23.814403
+Slovakia,Hedgehog,27/05/2024,0.7,18.0,Female,48.232775,17.070226
+Poland,Red Squirrel,28/05/2024,0.274,23.0,Male,52.821631,23.813638
+Poland,Red Squirrel,28/05/2024,0.274,23.0,Male,52.821631,23.813638
+Poland,Red Squirrel,29/05/2024,0.31,19.0,Female,52.821524,23.817037
+Slovakia,Hedgehog,29/05/2024,0.8,18.0,Male,48.22689,17.084025
+Slovakia,Lynx,29/05/2024,25.0,101.0,Female,48.412941,18.863684
+Poland,Red Squirrel,29/05/2024,0.31,19.0,Female,52.821524,23.817037
+Slovakia,Hedgehog,30/05/2024,0.6,18.0,Female,48.237124,17.085811
+Poland,Red Squirrel,31/05/2024,0.315,24.0,Female,52.82295,23.81275
+Poland,Red Squirrel,31/05/2024,0.293,22.0,Female,52.820813,23.809086
+Poland,Red Squirrel,31/05/2024,0.302,24.0,Male,52.825793,23.811068
+Poland,Red Squirrel,31/05/2024,0.299,20.0,Female,52.820308,23.809736
+Slovakia,Hedgehog,31/05/2024,0.6,15.0,Male,48.228141,17.089055
+Slovakia,Lynx,31/05/2024,30.0,115.0,Male,48.408025,18.865229
+Poland,Red Squirrel,31/05/2024,0.315,24.0,Female,52.82295,23.81275
+Poland,Red Squirrel,31/05/2024,0.293,22.0,Female,52.820813,23.809086
+Poland,Red Squirrel,31/05/2024,0.302,24.0,Male,52.825793,23.811068
+Poland,Red Squirrel,31/05/2024,0.299,20.0,Female,52.820308,23.809736
+Poland,Red Squirrel,01/06/2024,0.325,20.0,Male,52.823959,23.817073
+Poland,Red Squirrel,01/06/2024,0.276,22.0,Male,52.825746,23.815204
+Poland,Red Squirrel,01/06/2024,0.298,24.0,Female,52.823595,23.814758
+Poland,Red Squirrel,01/06/2024,0.322,23.0,Male,52.825363,23.816829
+Poland,Red Squirrel,01/06/2024,0.344,22.0,Female,52.821958,23.811375
+Poland,Red Squirrel,01/06/2024,0.323,22.0,Female,52.823084,23.816106
+Poland,Red Squirrel,01/06/2024,0.325,20.0,Male,52.823959,23.817073
+Poland,Red Squirrel,01/06/2024,0.276,22.0,Male,52.825746,23.815204
+Poland,Red Squirrel,01/06/2024,0.298,24.0,Female,52.823595,23.814758
+Poland,Red Squirrel,01/06/2024,0.322,23.0,Male,52.825363,23.816829
+Poland,Red Squirrel,01/06/2024,0.344,22.0,Female,52.821958,23.811375
+Poland,Red Squirrel,01/06/2024,0.323,22.0,Female,52.823084,23.816106
+Slovakia,Hedgehog,02/06/2024,0.6,15.0,Male,48.238913,17.065508
+,,03/06/2024,,,,,
+Slovakia,Hedgehog,03/06/2024,0.7,14.0,Female,48.237762,17.067101
+Slovakia,Hedgehog,03/06/2024,0.7,17.0,Female,48.238517,17.090268
+Slovakia,Hedgehog,05/06/2024,0.7,24.0,Male,48.232384,17.067453
+Czech Republic,Red Squirrel,06/06/2024,0.324,19.0,Male,50.881376,14.367503
+Czech Republic,Red Squirrel,06/06/2024,0.324,19.0,Female,50.883325,14.372463
+Slovakia,Lynx,07/06/2024,19.0,84.0,Female,48.408917,18.862915
+Czech Republic,Red Squirrel,08/06/2024,0.291,21.0,Female,50.881428,14.366689
+Czech Republic,Red Squirrel,08/06/2024,0.258,20.0,Male,50.882642,14.372818
+Czech Republic,Red Squirrel,10/06/2024,0.333,23.0,Male,50.883849,14.367353
+Czech Republic,Red Squirrel,11/06/2024,0.278,18.0,Female,50.884288,14.372837
+Slovakia,Lynx,19/06/2024,23.0,95.0,Male,48.411736,18.874597
+Slovakia,Lynx,19/06/2024,11.0,52.0,Female,48.41179,18.87165
+Czech Republic,Lynx,30/06/2024,25.0,97.0,Female,50.881003,14.369286
+Slovakia,Lynx,03/07/2024,15.0,65.0,Female,48.406339,18.841071
+Slovakia,Lynx,03/07/2024,18.0,85.0,Male,48.411729,18.835591
+Slovakia,Red Squirrel,03/07/2024,0.297,20.0,Not Determined,49.054132,22.411066
+Slovakia,Red Squirrel,03/07/2024,0.273,23.0,Female,49.055962,22.425527
+Slovakia,Red Squirrel,03/07/2024,0.254,19.0,Male,49.055646,22.412458
+Slovakia,Red Squirrel,03/07/2024,0.305,20.0,Female,49.05291,22.420861
+Slovakia,Red Squirrel,03/07/2024,0.327,19.0,Female,49.055547,22.411172
+Slovakia,Red Squirrel,03/07/2024,0.305,20.0,Male,49.054647,22.410445
+,,03/07/2024,,,,,
+Slovakia,Hedgehog,05/07/2024,1.0,17.0,Male,48.226063,17.078596
+Slovakia,Hedgehog,05/07/2024,0.6,16.0,Female,48.238067,17.090891
+Slovakia,Hedgehog,05/07/2024,1.1,20.0,Female,48.23954,17.066719
+Slovakia,Red Squirrel,03/08/2024,0.327,23.0,Male,49.057284,22.423861
+Slovakia,Red Squirrel,03/08/2024,0.319,22.0,Female,49.054751,22.41916
+Slovakia,Red Squirrel,03/08/2024,0.303,20.0,Male,49.05593,22.424085
+,,03/08/2024,,,,,
+Slovakia,Lynx,03/09/2024,12.0,61.0,Male,48.413928,18.835281
+Slovakia,Red Squirrel,03/09/2024,0.309,20.0,Female,49.057758,22.415169
+Slovakia,Red Squirrel,03/09/2024,0.332,19.0,Male,48.185695,17.090742
+Slovakia,Red Squirrel,03/11/2024,0.331,18.0,Female,48.18604,17.091147
+,,13/03/2024,,,,,
+,,14/03/2024,,,,,
+,,22/03/2024,,,,,
+,,22/03/2024,,,,,
+Hungary,Hedgehog,01/05/2024,,,Male,47.509755,18.949465
+Hungary,Hedgehog,01/05/2024,0.9,16.0,Female,47.507053,18.943306
+Poland,Red Squirrel,01/05/2024,0.281,21.0,Male,52.211985,21.032869
+Slovakia,Hedgehog,01/05/2024,0.6,19.0,Female,48.184621,17.089464
+Slovakia,Lynx,01/05/2024,27.0,96.0,Male,48.406669,18.871602
+Poland,Red Squirrel,01/05/2024,0.281,21.0,Male,52.211985,21.032869
+Poland,Lynx,02/05/2024,13.0,63.0,Female,52.846379,23.90499
+Poland,Lynx,02/05/2024,20.0,87.0,Female,52.852069,23.90087
+Poland,Red Squirrel,02/05/2024,0.282,22.0,Female,52.212911,21.034175
+Germany,Red Squirrel,02/05/2024,0.305,21.0,Female,48.162609,11.494157
+Czech Republic,European Bison,02/05/2024,727.0,210.0,Male,50.643056,14.843037
+Slovakia,Lynx,02/05/2024,25.0,107.0,Female,48.408475,18.872535
+Poland,Red Squirrel,02/05/2024,0.282,22.0,Female,52.212911,21.034175
+Hungary,Hedgehog,03/05/2024,1.2,26.0,Male,47.509103,18.948171
+Slovakia,Hedgehog,03/05/2024,1.1,22.0,Male,48.183927,17.090716
+Poland,Red Squirrel,04/05/2024,0.317,19.0,Female,52.21231,21.033586
+Poland,Red Squirrel,04/05/2024,0.317,19.0,Female,52.21231,21.033586
+Hungary,Hedgehog,05/05/2024,0.7,26.0,Male,47.510697,18.948588
+Hungary,Hedgehog,05/05/2024,1.1,21.0,Female,47.505903,18.948538
+Poland,Lynx,05/05/2024,24.0,89.0,Female,52.847483,23.906057
+Germany,Hedgehog,05/05/2024,0.6,23.0,Female,49.56122,11.082195
+Germany,Hedgehog,05/05/2024,0.7,21.0,Female,49.559523,11.103684
+Germany,Hedgehog,05/05/2024,0.6,23.0,Male,49.547725,11.082734
+Slovakia,Hedgehog,05/05/2024,1.0,21.0,Male,48.185893,17.08942
+Slovakia,Hedgehog,05/05/2024,0.4,16.0,Male,48.187845,17.086572
+Slovakia,Hedgehog,05/05/2024,0.7,19.0,Female,48.184278,17.086878
+Poland,Red Squirrel,06/05/2024,0.301,22.0,Male,52.21276,21.034189
+Poland,Red Squirrel,06/05/2024,0.343,22.0,Male,52.212497,21.033515
+Poland,Red Squirrel,06/05/2024,0.307,20.0,Female,52.212144,21.033534
+Slovakia,Hedgehog,06/05/2024,0.8,21.0,Male,48.187468,17.088827
+Poland,Red Squirrel,06/05/2024,0.301,22.0,Male,52.21276,21.034189
+Poland,Red Squirrel,06/05/2024,0.343,22.0,Male,52.212497,21.033515
+Poland,Red Squirrel,06/05/2024,0.307,20.0,Female,52.212144,21.033534
+Hungary,Hedgehog,07/05/2024,0.9,23.0,Male,47.510055,18.944356
+Poland,Red Squirrel,07/05/2024,0.346,20.0,Female,52.212001,21.033187
+Germany,Hedgehog,07/05/2024,1.0,23.0,Female,49.561356,11.105334
+Germany,Hedgehog,07/05/2024,0.5,17.0,Female,49.561569,11.087046
+Poland,Red Squirrel,07/05/2024,0.346,20.0,Female,52.212001,21.033187
+Hungary,Hedgehog,08/05/2024,0.9,16.0,Female,47.50986,18.939943

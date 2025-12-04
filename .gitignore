@@ -1,0 +1,34 @@
+# ENV
+.env
+.env.*
+*.env
+
+# Devcontainers
+.devcontainer/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+*.pyd
+
+# Logs
+logs/
+
+# Virtual environments
+.venv/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code workspace
+.vscode/
+
+# Coverage
+.coverage
+.coveragerc
+
+# Store
+DS_Store
