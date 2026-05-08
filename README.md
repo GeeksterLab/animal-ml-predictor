@@ -314,10 +314,14 @@ CI/CD ready with GitHub Actions & Codecov.
 ---
 
 ## 📜 License
-Licensed under MIT. See [LICENSE](LICENSE) for details.
+
+This project is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.
+See the [LICENSE](./LICENSE) file for full details.
 
 ---
 ## ✨ Auteur
 🏢 **AetherTech | GeeksterLab**
 _Next-Level Intelligence for Next-Level Minds_
 📧 [GeeksterLab@outlook.com](mailto:GeeksterLab@outlook.com)
+
+© 2025
