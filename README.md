@@ -12,21 +12,20 @@
 
 ## 🎯 **Project Overview**
 
-This project predicts:
+Animal Morphology & Weight Predictor is an end-to-end data science and machine learning project built around a generated animal morphology dataset.
 
-- **Weight → Length**  
-- **Length → Weight**  
+The dataset was intentionally designed to simulate a realistic ML workflow: messy raw data, cleaning, validation, exploratory analysis, model training, and interactive prediction.
 
-for multiple animal species using dedicated per‑species models (Linear Regression & Gradient Boosting) + a global multi‑output Gradient Boosting model for scientific exploration.
+The goal is to demonstrate how raw generated data can be transformed into a clean, structured and ML-ready dataset, then used to build species-specific prediction models through a complete Streamlit interface.
 
-Useful for wildlife analytics, zoology datasets, morphological inference or educational ML demonstrations.
+This project is designed as a portfolio-grade ML application focused on data preprocessing, model training, visualization, testing, and deployment through Streamlit.
 
 It also includes:
 
-- K‑Means clustering (morphology & geography)  
-- Full EDA (distributions, heatmaps, scatterplots…)  
-- A polished **Streamlit interface** with scientific explanations  
-- Automated logs, tests & stats  
+- K‑Means clustering (morphology & geography)
+- Full EDA (distributions, heatmaps, scatterplots…)
+- A polished **Streamlit interface** with scientific explanations
+- Automated logs, tests & stats
 
 ---
 
@@ -58,7 +57,7 @@ A quick visual tour of the main features of the **Animal Morphology & Weight Pre
 ```
 animal_morphology_weight_predictor/
 ├── .github/
-│   ├── workflows/                          
+│   ├── workflows/
 │       └── ci.yml
 │
 ├── app/
@@ -82,7 +81,7 @@ animal_morphology_weight_predictor/
 │       └── ML/kmeans/data_with_clusters_kmeans.csv
 │
 ├── logs/                             # All training & app logs (auto-generated)
-│   └── ...                           
+│   └── ...
 │
 ├── model/                            # All ML training scripts
 │   ├── gradient_boosting_global.py
@@ -109,7 +108,7 @@ animal_morphology_weight_predictor/
 │   │   ├── linear_regression/*.pkl
 │   │   └── kmeans/*.pkl
 │   │
-│   ├── notebook/                     # Audit 
+│   ├── notebook/                     # Audit
 │   │
 │   ├── modeling/ML/                  # Training visualizations
 │   │   ├── gradient_boosting/*.png
@@ -141,10 +140,7 @@ animal_morphology_weight_predictor/
 │   ├── paths_utils.py
 │   └── save_utils.py
 │
-├── .coverage                  
-├── .coveragerc                  
-├── autofix.py                 
-├── coverage.xml                 
+├── autofix.py
 ├── inspect_df.ipynb                  # Notebook for quick DF inspection
 ├── requirements.txt
 ├── README.md
@@ -158,27 +154,27 @@ animal_morphology_weight_predictor/
 # 🧪 **Models Used**
 
 ### ✔ Per‑species models
-- Linear Regression  
-- Gradient Boosting  
-➡ optimized separately for:  
+- Linear Regression
+- Gradient Boosting
+➡ optimized separately for:
 **Lynx, European Bison, Red Squirrel, Hedgehog**
 
 ### ✔ Global Multi‑Output Model
-Predicts:  
-- **Length_cm**  
-- **Weight_kg**  
-from:  
-- **Animal**  
+Predicts:
+- **Length_cm**
+- **Weight_kg**
+from:
+- **Animal**
 - **Country**
 
 Used for scientific visualization (PDP, embeddings, feature influence).
 
 ### ✔ K‑Means (K=2 & K=9)
 Cluster analysis based on:
-- Length  
-- Weight  
-- Latitude  
-- Longitude  
+- Length
+- Weight
+- Latitude
+- Longitude
 
 ---
 
@@ -186,11 +182,11 @@ Cluster analysis based on:
 
 Included in `/results/plots/EDA/`:
 
-- Distribution plots  
-- Weight vs Length density by gender  
-- Weight repartition by country  
-- Geographic heatmaps  
-- Scatterplots colored by species  
+- Distribution plots
+- Weight vs Length density by gender
+- Weight repartition by country
+- Geographic heatmaps
+- Scatterplots colored by species
 
 ---
 
@@ -236,16 +232,16 @@ Included in `/results/plots/EDA/`:
 ---
 
 ## 💻 Streamlit Application
-📌 **Path→** `app/app.py`  
-Demo: [🔗 Streamlit App](https://animal-morphology-predictor.streamlit.app/) 
+📌 **Path→** `app/app.py`
+Demo: [🔗 Streamlit App](https://animal-morphology-predictor.streamlit.app/)
 
 ### Features:
-- Prediction interface  
-- Scientific sandbox (100 random values)  
-- Plateau detection  
-- Morphology map (Length vs Weight + cluster)  
-- User guidance with domain‑specific wording  
-- Expanders for UX clarity  
+- Prediction interface
+- Scientific sandbox (100 random values)
+- Plateau detection
+- Morphology map (Length vs Weight + cluster)
+- User guidance with domain‑specific wording
+- Expanders for UX clarity
 - Error-prevention logic (same input → hint message)
 
 ---
@@ -253,8 +249,7 @@ Demo: [🔗 Streamlit App](https://animal-morphology-predictor.streamlit.app/)
 ## ⚙️ Installation & Run
 
 **Note:**
-Option A → Developers & advanced users (contributing to the project) should use pyenv to match the exact Python version and avoid conflicts.
-Option B → Standard users (simply running the app) can use a normal venv — more simple, more universal.
+Developers can use `pyenv` to match the recommended Python version. Standard users can use a classic virtual environment.
 
 ```bash
 # 1️⃣ Clone the repo
@@ -263,32 +258,33 @@ cd animal-ml-predictor
 
 # 2️⃣ Create virtual environment
 
-# ➤ Option A — Developers (pyenv)
+# Option A — pyenv
 pyenv virtualenv 3.11.7 animal-ml-predictor_env
 pyenv activate animal-ml-predictor_env
 pyenv local animal-ml-predictor_env
 
-# ➤ Option B — Standard users (venv)
+# Option B — venv
 python -m venv venv
 source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate     # Windows
 
 # 3️⃣ Install dependencies
-pip install -r requirements.txt
+make install
 
 # 4️⃣ Run Streamlit app
-streamlit run app/app.py
+make run
 ```
+
 ---
 
-## 🧪 Tests & Couverture
-
-Commandes :
+## 🧪 Tests & Coverage
 
 ```bash
-pytest --cov=utils --cov=scripts tests/
+# Run all tests
+make test
 
-pytest --cov=utils --cov=scripts  --cov-report=xml --cov-report=term-missing
+# Run tests with coverage report
+make coverage
 ```
 
 CI/CD ready with GitHub Actions & Codecov.
@@ -313,7 +309,7 @@ CI/CD ready with GitHub Actions & Codecov.
 ---
 
 ## 📎 Ressources
-- Dataset : [Lien Kaggle](https://www.kaggle.com/code/joannanplkrk/cleaning-messy-data/notebook)  
+- Dataset : [Lien Kaggle](https://www.kaggle.com/code/joannanplkrk/cleaning-messy-data/notebook)
 
 ---
 
@@ -322,7 +318,6 @@ Licensed under MIT. See [LICENSE](LICENSE) for details.
 
 ---
 ## ✨ Auteur
-🏢 **AetherTech | GeeksterLab**  
-_Next-Level Intelligence for Next-Level Minds_  
+🏢 **AetherTech | GeeksterLab**
+_Next-Level Intelligence for Next-Level Minds_
 📧 [GeeksterLab@outlook.com](mailto:GeeksterLab@outlook.com)
-

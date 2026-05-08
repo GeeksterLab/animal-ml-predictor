@@ -36,5 +36,7 @@ venv/
 # Streamlit cache
 .streamlit/secrets.toml
 
-# Test cache
+# Coverage reports
+coverage.xml
+htmlcov/
 .pytest_cache/
