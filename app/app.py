@@ -1,4 +1,3 @@
-
 # ----------------------------------------------------------
 # 📦 IMPORTS
 # ----------------------------------------------------------
@@ -6,7 +5,7 @@
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1] 
+ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
 
 import glob
@@ -29,6 +28,7 @@ from utils.config_utils import (
     BASE_DIR,
     DATA_CLEAN,
     DEFAULT_MAIN_DATASET,
+    DEFAULT_RAW_DATASET,
     FEATURE_DIR,
     GB_DIR,
     KMEANS_DIR,
@@ -49,11 +49,13 @@ def load_model_safe(path: Path, debug: bool = False):
         st.write(f"🔍 Loading model: `{path.name}`")
 
         st.write("📦 Environment versions:")
-        st.json({
-            "sklearn": sklearn.__version__,
-            "numpy": np.__version__,
-            "pandas": pd.__version__
-        })
+        st.json(
+            {
+                "sklearn": sklearn.__version__,
+                "numpy": np.__version__,
+                "pandas": pd.__version__,
+            }
+        )
 
     if not path.exists():
         if debug:
@@ -74,6 +76,7 @@ def load_model_safe(path: Path, debug: bool = False):
             st.exception(e)
         return None
 
+
 # ----------------------------------------------------------
 # 🧪 MODEL CONSISTENCY CHECKER — Gradient Boosting
 # ----------------------------------------------------------
@@ -92,17 +95,21 @@ def check_gb_models(GB_MODELS, GB_DIR):
             file_name = path.name
             exists = file_name in actual_files
 
-            summary_rows.append({
-                "Species": species,
-                "Target": target_name,
-                "File expected": file_name,
-                "Exists on disk": "✔️" if exists else "❌"
-            })
+            summary_rows.append(
+                {
+                    "Species": species,
+                    "Target": target_name,
+                    "File expected": file_name,
+                    "Exists on disk": "✔️" if exists else "❌",
+                }
+            )
 
             if not exists:
                 missing_files.append(file_name)
 
-    expected_files = {path.name for paths in GB_MODELS.values() for path in paths.values()}
+    expected_files = {
+        path.name for paths in GB_MODELS.values() for path in paths.values()
+    }
     unexpected_files = actual_files - expected_files
 
     # --- DISPLAY REPORT ---
@@ -123,13 +130,14 @@ def check_gb_models(GB_MODELS, GB_DIR):
     else:
         st.info("No extra files — folder matches model dictionary perfectly.")
 
+
 # ----------------------------------------------------------
 # ⚙️ STREAMLIT CONFIGURATION
 # ----------------------------------------------------------
 st.set_page_config(
     page_title="🐾 Animal Morphology & Weight Predictor — AetherTech Lab",
     page_icon="☀︎",
-    layout="wide"
+    layout="wide",
 )
 
 # Sidebar navigation
@@ -138,14 +146,15 @@ pages = [
     ":material/assignment: Project",
     ":material/search: Data Exploration",
     ":material/scatter_plot: Data Analysis",
-    ":material/psychology: Modeling & Prediction"
+    ":material/psychology: Modeling & Prediction",
 ]
 page = st.sidebar.radio("Go to:", pages)
 
 # ----------------------------------------------------------
 # 🎨 STYLING — Hover, Highlights, Transitions
 # ----------------------------------------------------------
-st.markdown("""
+st.markdown(
+    """
 <style>
 section[data-testid="stSidebar"] div[role="radiogroup"] label:hover {
   background: rgba(90, 132, 255, 0.15);
@@ -164,18 +173,29 @@ section[data-testid="stSidebar"] div[role="radiogroup"] label:has(input:checked)
   box-shadow: 0 6px 18px rgba(0,0,0,.18);
 }
 </style>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
 # ----------------------------------------------------------
-# 📥 DATA LOADING 
+# 📥 DATA LOADING
 # ----------------------------------------------------------
 try:
-    df = pd.read_csv(DEFAULT_MAIN_DATASET)
-    st.sidebar.success(f"Dataset loaded ✔ ({DEFAULT_MAIN_DATASET.name})")
+    df_raw = pd.read_csv(DEFAULT_RAW_DATASET, sep=";")
+    st.sidebar.success(f"Raw dataset loaded ✔ ({DEFAULT_RAW_DATASET.name})")
 except Exception as e:
-    st.sidebar.error(f"❌ Failed to load dataset: {e}")
-    df = None
+    st.sidebar.error(f"❌ Failed to load raw dataset: {e}")
+    df_raw = None
 
+try:
+    df_clean = pd.read_csv(DEFAULT_MAIN_DATASET)
+    st.sidebar.success(f"Clean dataset loaded ✔ ({DEFAULT_MAIN_DATASET.name})")
+except Exception as e:
+    st.sidebar.error(f"❌ Failed to load clean dataset: {e}")
+    df_clean = None
+
+# Dataset principal utilisé par Data Analysis + Modeling
+df = df_clean
 
 # ----------------------------------------------------------
 # 📄 PAGE 1 — PROJECT OVERVIEW
@@ -185,53 +205,93 @@ if page == pages[0]:
     st.header(":rainbow[Animal Morphology Lab] :crystal_ball:")
     st.divider()
     st.markdown("""
-    ### Project Overview  
-    This template demonstrates a full **ML-ready Streamlit app** including:  
-    - Data exploration  
-    - Visual analytics  
-    - Model loading  
-    - Real-time prediction  
+    ### Project Overview
 
+    **Animal Morphology Lab** is a complete data science project based on a generated animal morphology dataset.
+
+    The dataset was designed to simulate a realistic workflow: messy raw data, cleaning, validation, exploratory analysis, model training, and interactive prediction.
+
+    The app demonstrates how raw data can be transformed into a clean, structured, and ML-ready dataset, then used to build species-specific prediction tools.
+
+    Key components include:
+
+    - Raw vs clean dataset comparison
+    - Missing values and duplicate analysis
+    - Visual exploration of morphology patterns
+    - Gradient Boosting prediction models
+    - Interactive weight and length prediction by species
+    - Model behavior analysis with simulations
     """)
-    st.caption(":orange[Upload your CSV or load it from a local path in the sidebar.]")
+    # st.caption(":orange[Upload your CSV or load it from a local path in the sidebar.]")
 
 # ----------------------------------------------------------
 # 🔍 PAGE 2 — DATA EXPLORATION
 # ----------------------------------------------------------
 elif page == pages[1]:
-    if df is None:
-        st.warning("⚠️ Please load a dataset first.")
+    if df_raw is None or df_clean is None:
+        st.warning("⚠️ Please load both raw and clean datasets first.")
         st.stop()
 
     st.divider()
     st.header(":rainbow[Data Exploration]")
     st.divider()
 
-    st.caption("💡 These statistics were auto-generated during the preprocessing phase.")
+    left, right = st.columns(2)
 
-    st.subheader("📄 Dataset Preview")
-    st.dataframe(df.head(100))
-    st.write(f"Data shape: {df.shape}")
+    with left:
+        st.subheader("📄 Raw Dataset Preview")
+        st.dataframe(df_raw.head(100))
+        st.write(f"Data shape: {df_raw.shape}")
 
-    if st.checkbox("📉 Show NaN count"):
-        st.caption("Counts missing values for each column.")
-        st.dataframe(df.isna().sum())
+        if st.checkbox("📉 Show Raw NaN count", key="raw_nan_count"):
+            st.caption("Counts missing values for each column.")
+            st.dataframe(df_raw.isna().sum())
 
-    if st.checkbox("♻️ Show duplicated rows"):
-        st.caption("Counts duplicated rows in the dataset.")
-        st.write(int(df.duplicated().sum()))
+        if st.checkbox("♻️ Show Raw duplicated rows", key="raw_duplicates"):
+            st.caption("Counts duplicated rows in the raw dataset.")
+            st.write(int(df_raw.duplicated().sum()))
 
-    if st.checkbox("⚠️ Show rows with missing values"):
-        st.caption("Displays all rows containing at least one NaN value.")
-        lines_na = df[df.isna().any(axis=1)]
-        st.write(f"{len(lines_na)} rows with missing values")
-        st.dataframe(lines_na)
-        st.download_button(
-            "📥 Download missing rows",
-            data=lines_na.to_csv(index=False).encode("utf-8"),
-            file_name="missing_rows.csv",
-            mime="text/csv"
-        )
+        if st.checkbox("⚠️ Show Raw rows with missing values", key="raw_missing_rows"):
+            st.caption("Displays all raw rows containing at least one NaN value.")
+            lines_na_raw = df_raw[df_raw.isna().any(axis=1)]
+            st.write(f"{len(lines_na_raw)} raw rows with missing values")
+            st.dataframe(lines_na_raw)
+            st.download_button(
+                "📥 Download raw missing rows",
+                data=lines_na_raw.to_csv(index=False).encode("utf-8"),
+                file_name="raw_missing_rows.csv",
+                mime="text/csv",
+            )
+
+    with right:
+        st.subheader("🧼 Clean Dataset Preview")
+        st.dataframe(df_clean.head(100))
+        st.write(f"Data shape: {df_clean.shape}")
+
+        if st.checkbox("📉 Show Clean NaN count", key="clean_nan_count"):
+            st.caption("Counts missing values for each column.")
+            st.dataframe(df_clean.isna().sum())
+
+        if st.checkbox("♻️ Show Clean duplicated rows", key="clean_duplicates"):
+            st.caption("Counts duplicated rows in the clean dataset.")
+            st.write(int(df_clean.duplicated().sum()))
+
+        if st.checkbox(
+            "⚠️ Show Clean row with missing values", key="clean_missing_rows"
+        ):
+            st.caption("Displays all clean rows containing at least one NaN value.")
+            lines_na_clean = df_clean[df_clean.isna().any(axis=1)]
+            st.write(f"{len(lines_na_clean)} clean rows with missing values")
+            st.dataframe(lines_na_clean)
+            st.download_button(
+                "📥 Download clean missing rows",
+                data=lines_na_clean.to_csv(index=False).encode("utf-8"),
+                file_name="clean_missing_rows.csv",
+                mime="text/csv",
+            )
+
+    st.divider()
+    st.subheader("🧼 Clean EDA Reports")
 
     with st.expander("📘 Numerical Statistics (Markdown)"):
         st.caption("Summary of numerical values: averages, spread, and distributions.")
@@ -241,15 +301,17 @@ elif page == pages[1]:
         except:
             st.info("No numerical EDA markdown file found.")
 
-
     with st.expander("📙 Categorical Statistics (Markdown)"):
-        st.caption("Summary of categorical values: most frequent categories and repartitions.")
+        st.caption(
+            "Summary of categorical values: most frequent categories and repartitions."
+        )
         try:
-            with open(STATS_EDA / "eda_categorical_stats.md", "r", encoding="utf-8") as f:
+            with open(
+                STATS_EDA / "eda_categorical_stats.md", "r", encoding="utf-8"
+            ) as f:
                 st.markdown(f.read())
         except:
             st.info("No categorical EDA markdown file found.")
-
 
     st.subheader("📊 EDA Plots")
 
@@ -259,7 +321,9 @@ elif page == pages[1]:
         if os.path.exists(plot_path_1):
             st.image(plot_path_1, width=800)
         else:
-            st.info("Plot file not found. Please generate the plot and save it as 'results/plots/EDA/distribution_weight_vs_length_by_gender.png'.")
+            st.info(
+                "Plot file not found. Please generate the plot and save it as 'results/plots/EDA/distribution_weight_vs_length_by_gender.png'."
+            )
 
     with st.expander("🗺️ Repartition — Weight by Country"):
         st.caption("Helps reveal weight patterns across countries and species.")
@@ -267,10 +331,12 @@ elif page == pages[1]:
         if os.path.exists(plot_path_2):
             st.image(plot_path_2, width=800)
         else:
-            st.info("Plot file not found. Please generate the plot and save it as 'results/plots/EDA/repartion_weight_by_country.png'.")
+            st.info(
+                "Plot file not found. Please generate the plot and save it as 'results/plots/EDA/repartion_weight_by_country.png'."
+            )
 
 # ----------------------------------------------------------
-# 📊 PAGE 3 — VISUAL ANALYSIS 
+# 📊 PAGE 3 — VISUAL ANALYSIS
 # ----------------------------------------------------------
 elif page == pages[2]:
     if df is None:
@@ -290,20 +356,20 @@ elif page == pages[2]:
     # ======================================================
     with tab_hm:
         st.subheader("🔬 Correlation Insights")
-        st.caption("Detect linear or rank-based relationships between numerical features.")
+        st.caption(
+            "Detect linear or rank-based relationships between numerical features."
+        )
 
         num_cols = df.select_dtypes(include=["int", "float"]).columns.tolist()
 
         corr_method = st.radio(
             "Correlation method:",
             ["Pearson (linear)", "Spearman (rank-based)"],
-            horizontal=True
+            horizontal=True,
         )
 
         selected_cols = st.multiselect(
-            "Select variables to include:",
-            num_cols,
-            default=num_cols
+            "Select variables to include:", num_cols, default=num_cols
         )
 
         generate = st.button("📡 Generate Heatmap", use_container_width=True)
@@ -314,9 +380,9 @@ elif page == pages[2]:
 
             fig = px.imshow(
                 cm,
-                text_auto=".2f",
+                text_auto=True,
                 color_continuous_scale="YlGnBu",
-                title=f"Correlation Matrix ({corr_method})"
+                title=f"Correlation Matrix ({corr_method})",
             )
             st.plotly_chart(fig, use_container_width=True)
 
@@ -335,8 +401,9 @@ elif page == pages[2]:
                     a, b = idx if isinstance(idx, tuple) else ("?", "?")
                     st.markdown(f"**{a} ↔ {b}** : correlation **{val:.2f}**")
 
-                st.caption("High correlations may reveal shared structure or measurement effects.")
-
+                st.caption(
+                    "High correlations may reveal shared structure or measurement effects."
+                )
 
     # ======================================================
     # 🔥 TAB 2 — BARPLOT
@@ -361,7 +428,7 @@ elif page == pages[2]:
                     y=grouped.values,
                     color=grouped.values,
                     color_continuous_scale="Viridis",
-                    title=f"Average {y} by {x}"
+                    title=f"Average {y} by {x}",
                 )
                 fig.update_layout(height=500)
 
@@ -376,7 +443,6 @@ elif page == pages[2]:
                     f"📌 **Insight:** Highest {y} in **{top_cat}** ({top_val:.2f}), "
                     f"lowest in **{bottom_cat}** ({bottom_val:.2f})."
                 )
-
 
     # ======================================================
     # 🔥 TAB 3 — SCATTER
@@ -401,7 +467,7 @@ elif page == pages[2]:
                     opacity=0.6,
                     trendline="ols",
                     color_discrete_sequence=["#4C72B0"],
-                    title=f"{x} vs {y}"
+                    title=f"{x} vs {y}",
                 )
                 st.plotly_chart(fig, use_container_width=True)
 
@@ -416,7 +482,6 @@ elif page == pages[2]:
                     msg = "no clear relationship"
 
                 st.info(f"📈 **Correlation:** `{corr_value:.2f}` → {msg}.")
-
 
     # ======================================================
     # 🧠 FINAL SUMMARY
@@ -433,14 +498,16 @@ elif page == pages[2]:
         corr_value = cm_flat[cm_flat < 0.999].sort_values(ascending=False).iloc[0]
         var1, var2 = strongest_pair
 
-        top_species = df["Species"].value_counts().idxmax() if "Species" in df.columns else "N/A"
+        top_species = (
+            df["Species"].value_counts().idxmax() if "Species" in df.columns else "N/A"
+        )
 
         summary = f"""
-### 📌 Summary Highlights  
-• **Strongest correlation:** {var1} ↔ {var2} (corr = {corr_value:.2f})  
-• **Dominant species:** {top_species}  
-• **Numeric distributions:** globally stable  
-• **Category imbalance:** detected, may influence model accuracy  
+### 📌 Summary Highlights
+• **Strongest correlation:** {var1} ↔ {var2} (corr = {corr_value:.2f})
+• **Dominant species:** {top_species}
+• **Numeric distributions:** globally stable
+• **Category imbalance:** detected, may influence model accuracy
 """
 
         st.markdown(summary)
@@ -462,7 +529,7 @@ elif page == pages[3]:
     # 🔹 Auto-loading of all models (Gradient + KMeans) ---
     # ---------------------------------------------------------
     st.subheader(":gear: Loading Models...")
-    
+
     # --- Paths for Gradient Boosting models ---
     GB_MODELS = {
         "European Bison": {
@@ -503,7 +570,9 @@ elif page == pages[3]:
                 species_models[target_name] = model
             else:
                 species_models[target_name] = None
-                st.error(f"❌ Could not load Gradient Boosting {target_name} model for {species_name}")
+                st.error(
+                    f"❌ Could not load Gradient Boosting {target_name} model for {species_name}"
+                )
 
         loaded_gb_models[species_name] = species_models
 
@@ -511,7 +580,6 @@ elif page == pages[3]:
     KMEANS_MODELS = {
         "K2": KMEANS_DIR / "kmeans_morpho_geo_k2.pkl",
     }
-
 
     loaded_kmeans = {}
     for name, path in KMEANS_MODELS.items():
@@ -532,7 +600,9 @@ elif page == pages[3]:
 
     # --- Load feature importances weight ---
     try:
-        fi_weight = pd.read_csv(FEATURE_DIR / "feature_importance_gradientboosting_weight_per_species.csv")
+        fi_weight = pd.read_csv(
+            FEATURE_DIR / "feature_importance_gradientboosting_weight_per_species.csv"
+        )
 
         st.success("📊 Weight Feature Importance loaded.")
     except:
@@ -558,11 +628,12 @@ elif page == pages[3]:
         analysis_model = joblib.load(
             GB_DIR / "gradient_boosting_multioutput_animal_country_to_length_weight.pkl"
         )
-        st.success("🧠 Global multi-output Gradient Boosting model loaded for analysis.")
+        st.success(
+            "🧠 Global multi-output Gradient Boosting model loaded for analysis."
+        )
     except Exception:
         analysis_model = None
         st.info("ℹ️ Global analysis model not available (PDP will be limited).")
-
 
     # ------------------------------------------------------
     # 🔍 ADVANCED MODEL VISUALIZATION & ANALYSIS
@@ -590,7 +661,9 @@ elif page == pages[3]:
     try:
         if "y_test" not in st.session_state or "y_pred" not in st.session_state:
             st.session_state["y_test"] = np.random.uniform(0, 100, 100)
-            st.session_state["y_pred"] = st.session_state["y_test"] + np.random.normal(0, 10, 100)
+            st.session_state["y_pred"] = st.session_state["y_test"] + np.random.normal(
+                0, 10, 100
+            )
 
         y_test = st.session_state["y_test"]
         y_pred = st.session_state["y_pred"]
@@ -657,18 +730,22 @@ elif page == pages[3]:
     # ---------------------------
     # Load corresponding models
     # ---------------------------
-    safe_slug = species.replace(" ", "_").lower() if isinstance(species, str) else ""
+    # safe_slug = species.replace(" ", "_").lower() if isinstance(species, str) else ""
 
-    try:
-        model_length = joblib.load(GB_DIR / f"gradient_boosting_length_{safe_slug}.pkl")
+    # try:
+    #     model_length = joblib.load(GB_DIR / f"gradient_boosting_length_{safe_slug}.pkl")
 
-    except:
-        model_length = None
+    # except:
+    #     model_length = None
 
-    try:
-        model_weight = joblib.load(GB_DIR / f"gradient_boosting_weight_{safe_slug}.pkl")
-    except:
-        model_weight = None
+    # try:
+    #     model_weight = joblib.load(GB_DIR / f"gradient_boosting_weight_{safe_slug}.pkl")
+    # except:
+    #     model_weight = None
+    species_models = loaded_gb_models.get(species, {})
+
+    model_length = species_models.get("length")
+    model_weight = species_models.get("weight")
 
     if model_length is None and model_weight is None:
         st.error(f"❌ No models found for {species}.")
@@ -680,7 +757,7 @@ elif page == pages[3]:
     mode = st.radio(
         "Choose prediction type:",
         ["Predict Weight from Length", "Predict Length from Weight"],
-        horizontal=True
+        horizontal=True,
     )
 
     # ---------------------------
@@ -696,7 +773,10 @@ elif page == pages[3]:
     if mode == "Predict Weight from Length":
         value = st.number_input(
             "📏 Enter Length (cm) — **min: 0 | max: 400**:",
-            min_value=10.0, max_value=400.0, value=100.0, step=1.0
+            min_value=10.0,
+            max_value=400.0,
+            value=100.0,
+            step=1.0,
         )
         model = model_weight
         input_feature = "Length_cm"
@@ -706,7 +786,10 @@ elif page == pages[3]:
     else:
         value = st.number_input(
             "🏋️ Enter Weight (kg)  — **min: 0 | max: 2000**:",
-            min_value=10.0, max_value=2000.0, value=50.0, step=1.0
+            min_value=10.0,
+            max_value=2000.0,
+            value=50.0,
+            step=1.0,
         )
         model = model_length
         input_feature = "Weight_kg"
@@ -739,7 +822,10 @@ elif page == pages[3]:
                 st.session_state.last_value is not None
                 and st.session_state.last_pred is not None
             ):
-                if value != st.session_state.last_value and pred_rounded == st.session_state.last_pred:
+                if (
+                    value != st.session_state.last_value
+                    and pred_rounded == st.session_state.last_pred
+                ):
                     st.warning(
                         "😅 Tu as changé la valeur, **mais la prédiction n'a pas bougé**. "
                         "Essaie un chiffre un peu plus éloigné pour mieux voir la réaction du modèle !"
@@ -764,9 +850,8 @@ elif page == pages[3]:
                 "unit": unit,
                 "value": float(value),
                 "pred": float(pred_rounded),
-                "model_type": "weight" if model is model_weight else "length"
+                "model_type": "weight" if model is model_weight else "length",
             }
-
 
             # --- Mini gauge plot ---
             gauge_fig = px.scatter(
@@ -776,7 +861,7 @@ elif page == pages[3]:
                 color=[pred_rounded],
                 range_y=[0, max(pred_rounded * 1.5, 1)],
                 title=f"{output_name.replace('_', ' ')} estimation",
-                labels={"y": f"{output_name.replace('_', ' ')} ({unit})", "x": ""}
+                labels={"y": f"{output_name.replace('_', ' ')} ({unit})", "x": ""},
             )
             gauge_fig.update_layout(
                 showlegend=False,
@@ -805,7 +890,7 @@ elif page == pages[3]:
     if "lab_context" in st.session_state:
         ctx = st.session_state["lab_context"]
         current_model = model_weight if ctx["model_type"] == "weight" else model_length
-        
+
         # Ensure model is loaded (for type checkers)
         if current_model is None:
             st.error("Model not loaded for this species.")
@@ -818,13 +903,12 @@ elif page == pages[3]:
         value_ctx = ctx["value"]
         pred_ctx = ctx["pred"]
 
-
         df_species = df_clean[df_clean["Animal"] == species_ctx].copy()
 
         # 🎨 Palette auto "intelligente"
-        palette_curve = px.colors.sequential.Viridis    
-        palette_sim = px.colors.sequential.Plasma       
-        point_color = "#00E0FF"                         
+        palette_curve = px.colors.sequential.Viridis
+        palette_sim = px.colors.sequential.Plasma
+        point_color = "#00E0FF"
 
         # --------------------------------------------------
         # 1️⃣ Morphology Scan — Species Summary
@@ -877,10 +961,14 @@ elif page == pages[3]:
             )
 
             if df_species.empty:
-                st.warning("No data available to build a response curve for this species.")
+                st.warning(
+                    "No data available to build a response curve for this species."
+                )
             else:
                 if input_feature_ctx not in df_species.columns:
-                    st.warning(f"Input feature `{input_feature_ctx}` not found in dataset.")
+                    st.warning(
+                        f"Input feature `{input_feature_ctx}` not found in dataset."
+                    )
                 else:
                     f_series = df_species[input_feature_ctx].dropna()
                     if len(f_series) < 5:
@@ -913,7 +1001,11 @@ elif page == pages[3]:
                             x=[value_ctx],
                             y=[pred_ctx],
                             mode="markers",
-                            marker=dict(size=14, color=point_color, line=dict(width=2, color="white")),
+                            marker=dict(
+                                size=14,
+                                color=point_color,
+                                line=dict(width=2, color="white"),
+                            ),
                             name="Your prediction",
                         )
 
@@ -975,13 +1067,17 @@ elif page == pages[3]:
             )
 
             if input_feature_ctx not in df_species.columns:
-                st.warning(f"Input feature `{input_feature_ctx}` not available to build simulations.")
+                st.warning(
+                    f"Input feature `{input_feature_ctx}` not available to build simulations."
+                )
             else:
                 base_series = df_species[input_feature_ctx].dropna()
                 if len(base_series) == 0:
                     st.warning("No data available for synthetic sampling.")
                 else:
-                    base_min, base_max = float(base_series.min()), float(base_series.max())
+                    base_min, base_max = float(base_series.min()), float(
+                        base_series.max()
+                    )
                     base_span = base_max - base_min or 1.0
 
                     sim_low = max(0.0, base_min - (spread_factor - 1.0) * base_span)
@@ -1028,5 +1124,3 @@ elif page == pages[3]:
                         "to values that do not exist in the original dataset — "
                         "ideal to reason about robustness and extrapolation."
                     )
-
-

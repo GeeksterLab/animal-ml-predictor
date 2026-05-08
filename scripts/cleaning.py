@@ -9,13 +9,13 @@ import unicodedata
 import pandas as pd
 
 from configuration.logger_config import get_logger
-from utils.data_utils import parse_date
 
 # ==========================================================
 # ⚙️ CONFIG LOGGING
 # ==========================================================
 logger = get_logger("cleaning")
 logger.info("🚀 Cleaning script initialized successfully.")
+
 
 # ==========================================================
 # 🔧 UTILITAIRES GÉNÉRIQUES
@@ -34,7 +34,7 @@ def _normalize_string(val: str) -> str | None:
     if not isinstance(val, str):
         return None
 
-    v = unicodedata.normalize("NFC", str(val)).replace("\u00A0", " ")
+    v = unicodedata.normalize("NFC", str(val)).replace("\u00a0", " ")
     v = v.strip().lower()
 
     v = re.sub(r"[^\w\s.-]", " ", v, flags=re.UNICODE)
@@ -44,21 +44,25 @@ def _normalize_string(val: str) -> str | None:
 
     return v or None
 
+
 # ==========================================================
 # 🧹 CLEANING PIPELINE FUNCTIONS
 # ==========================================================
 
 RENAME_MAPPING = {
     "Animal_type": "Animal",
-    "Observation_date": "Date",
     "Body_Length_cm": "Length_cm",
 }
+
 
 def clean_dataset_base(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 
     columns_to_drop = [
-        "Animal_code", "Animal_name", "Data_compiled_by"
+        "Animal_code",
+        "Animal_name",
+        "Data_compiled_by",
+        "Observation_date",
     ]
     if columns_to_drop:
         df = df.drop(columns=columns_to_drop, errors="ignore")
@@ -69,10 +73,27 @@ def clean_dataset_base(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def cleaning_pipeline(Animal, Date, Country, Weight_kg, Length_cm, Gender, Latitude, Longitude) -> dict[str, str | float | int | None] | None:
-    if pd.isna(Animal) and pd.isna(Date) and pd.isna(Country) and pd.isna(Weight_kg) and pd.isna(Length_cm) and pd.isna(Gender) and pd.isna(Latitude) and pd.isna(Longitude): return None
+def cleaning_pipeline(
+    Animal=None,
+    Country=None,
+    Weight_kg=None,
+    Length_cm=None,
+    Gender=None,
+    Latitude=None,
+    Longitude=None,
+) -> dict[str, str | float | int | None] | None:
+    if (
+        pd.isna(Animal)
+        and pd.isna(Country)
+        and pd.isna(Weight_kg)
+        and pd.isna(Length_cm)
+        and pd.isna(Gender)
+        and pd.isna(Latitude)
+        and pd.isna(Longitude)
+    ):
+        return None
 
-    cleaned : dict[str, str | float | int | None] = {}
+    cleaned: dict[str, str | float | int | None] = {}
 
     # ==========================================================
     #  COUNTRY
@@ -105,34 +126,58 @@ def cleaning_pipeline(Animal, Date, Country, Weight_kg, Length_cm, Gender, Latit
 
     cleaned["Animal"] = clean_animal.strip().title() if clean_animal else None
 
-    cleaned["Date"] = parse_date(Date) 
-    cleaned["Weight_kg"] = Weight_kg if isinstance(Weight_kg,(int,float)) else None
-    cleaned["Length_cm"] = Length_cm if isinstance(Length_cm,(int,float)) else None
-    cleaned["Gender"] = Gender.strip().title() if isinstance(Gender,str) else None
-    cleaned["Latitude"] = Latitude if isinstance(Latitude,(int,float)) else None
-    cleaned["Longitude"] = Longitude if isinstance(Longitude,(int,float)) else None
+    cleaned["Weight_kg"] = Weight_kg if isinstance(Weight_kg, (int, float)) else None
+    cleaned["Length_cm"] = Length_cm if isinstance(Length_cm, (int, float)) else None
+    cleaned["Gender"] = Gender.strip().title() if isinstance(Gender, str) else None
+    cleaned["Latitude"] = Latitude if isinstance(Latitude, (int, float)) else None
+    cleaned["Longitude"] = Longitude if isinstance(Longitude, (int, float)) else None
 
     return cleaned
+
 
 # ==========================================================
 # 📈 STATS
 # ==========================================================
 def afficher_statistiques(df: pd.DataFrame, logger=logging):
     """Display or log key dataframe statistics based on execution mode."""
+
+    def _to_hashable(value):
+        if isinstance(value, dict):
+            return tuple(sorted((k, _to_hashable(v)) for k, v in value.items()))
+        if isinstance(value, list):
+            return tuple(_to_hashable(v) for v in value)
+        if isinstance(value, set):
+            return tuple(sorted(_to_hashable(v) for v in value))
+        return value
+
+    unique_values = (
+        df.apply(lambda col: col.map(_to_hashable).nunique()).head(10).to_dict()
+    )
     logger.info("========== 🧹 STATISTICS  ==========")
     logger.info(f"📏 Shape: {df.shape}")
-    logger.info(f"🔑 Unique values (top10): {df.nunique().head(10).to_dict()}")
+    logger.info(f"🔑 Unique values (top10): {unique_values}")
     logger.info(f"♻️ Duplicates: {int(df.duplicated().sum())}")
     logger.info(f"❓ Missing values (top10): {df.isna().sum().head(10).to_dict()}")
 
-    logger.info(f"Bad/NA Animal: {df['Animal'].isna().sum() if 'Animal' in df.columns else '-'}")
-    logger.info(f"Bad/NA Country: {df['Country'].isna().sum() if 'Country' in df.columns else '-'}")
-    logger.info(f"Bad/NA Weight_kg: {df['Weight_kg'].isna().sum() if 'Weight_kg' in df.columns else '-'}")
-    logger.info(f"Bad/NA Length: {df['Length'].isna().sum() if 'Length' in df.columns else '-'}")
-    logger.info(f"Bad/NA Date: {df['Date'].isna().sum() if 'Date' in df.columns else '-'}")
-    logger.info(f"Bad/NA Gender: {df['Gender'].isna().sum() if 'Gender' in df.columns else '-'}")
-    logger.info(f"Bad/NA Longitude: {df['Longitude'].isna().sum() if 'Longitude' in df.columns else '-'}")
-    logger.info(f"Bad/NA Latitude: {df['Latitude'].isna().sum() if 'Latitude' in df.columns else '-'}")
+    logger.info(
+        f"Bad/NA Animal: {df['Animal'].isna().sum() if 'Animal' in df.columns else '-'}"
+    )
+    logger.info(
+        f"Bad/NA Country: {df['Country'].isna().sum() if 'Country' in df.columns else '-'}"
+    )
+    logger.info(
+        f"Bad/NA Weight_kg: {df['Weight_kg'].isna().sum() if 'Weight_kg' in df.columns else '-'}"
+    )
+    logger.info(
+        f"Bad/NA Length: {df['Length'].isna().sum() if 'Length' in df.columns else '-'}"
+    )
+    logger.info(
+        f"Bad/NA Gender: {df['Gender'].isna().sum() if 'Gender' in df.columns else '-'}"
+    )
+    logger.info(
+        f"Bad/NA Longitude: {df['Longitude'].isna().sum() if 'Longitude' in df.columns else '-'}"
+    )
+    logger.info(
+        f"Bad/NA Latitude: {df['Latitude'].isna().sum() if 'Latitude' in df.columns else '-'}"
+    )
     logger.info("✅ Production inspection complete.")
-
-

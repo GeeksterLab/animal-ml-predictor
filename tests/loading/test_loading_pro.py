@@ -29,7 +29,6 @@ def test_loading_df_single_file(mocker):
         "Animal": ["A"],
         "Country": ["X"],
         "Length_cm": [10],
-        "Date": ["2024-01-01"],
     })
 
     mocker.patch("pandas.read_csv", return_value=mock_df)
@@ -37,7 +36,7 @@ def test_loading_df_single_file(mocker):
     df = loading_df(["fake.csv"])
 
     assert isinstance(df, pd.DataFrame)
-    assert df.shape == (1, 4)  # 1 ligne, 4 colonnes
+    assert df.shape == (1, 3)  # 1 ligne, 3 colonnes
 
 
 # ==========================================================

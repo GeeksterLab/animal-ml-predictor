@@ -30,5 +30,11 @@ venv/
 .coverage
 .coveragerc
 
-# Store
-DS_Store
+# Mac
+.DS_Store
+
+# Streamlit cache
+.streamlit/secrets.toml
+
+# Test cache
+.pytest_cache/

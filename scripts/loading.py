@@ -12,7 +12,7 @@ from scripts.cleaning import RENAME_MAPPING
 from utils.config_utils import DEFAULT_RAW_DATASET
 
 # ==========================================================
-# ⚙️ CONFIG LOGGING 
+# ⚙️ CONFIG LOGGING
 # ==========================================================
 logger = get_logger("loading")
 logger.info("🚀 Loading script initialized.")
@@ -33,15 +33,19 @@ READ_DEFAULT = {
 
 DEFAULT_FILE_PATH: List[str] = [str(DEFAULT_RAW_DATASET)]
 
+
 # ==========================================================
 # LOADER FUNCTION
 # ==========================================================
-def loading_df(file_path: Iterable[str] = DEFAULT_FILE_PATH, **read_csv_kwargs) -> pd.DataFrame:
+def loading_df(
+    file_path: Iterable[str] = DEFAULT_FILE_PATH, **read_csv_kwargs
+) -> pd.DataFrame:
     """
     Generic data loader for CSV-based datasets.
     Can handle multiple paths and automatically concatenate them.
     """
-    dfs = []
+    # dfs = []
+    dfs: list[pd.DataFrame] = []
     cfg = {**READ_DEFAULT, **read_csv_kwargs}
 
     for path in file_path:
@@ -50,16 +54,18 @@ def loading_df(file_path: Iterable[str] = DEFAULT_FILE_PATH, **read_csv_kwargs) 
             try:
                 df_temp = pd.read_csv(path, **cfg)
                 df_temp.columns = df_temp.columns.str.strip()
-                # --- Auto-detect expected columns from cleaning pipeline arguments ---
-                expected_cols = set(RENAME_MAPPING.values())
+                # --- Validate against raw headers (before clean_dataset_base renaming) ---
+                expected_cols = set(RENAME_MAPPING.keys())
                 missing = expected_cols - set(df_temp.columns)
                 if missing:
                     logger.warning(f"⚠️ Missing expected columns: {missing}")
                 else:
                     logger.info("🟢 All required columns found.")
                 dfs.append(df_temp)
-                logger.info(f"✅ Successfully loaded: {os.path.basename(path)} ({df_temp.shape[0]} rows)")
-            except Exception as e: # pragma: no cover
+                logger.info(
+                    f"✅ Successfully loaded: {os.path.basename(path)} ({df_temp.shape[0]} rows)"
+                )
+            except Exception as e:  # pragma: no cover
                 logger.warning(f"⚠️ Reading error on {path}: {e}")
         else:
             logger.error(f"❌ File not found → {path}")
@@ -67,6 +73,8 @@ def loading_df(file_path: Iterable[str] = DEFAULT_FILE_PATH, **read_csv_kwargs) 
     if not dfs:
         raise FileNotFoundError(f"🔴 No valid file(s) found in paths: {file_path}")
 
-    df_concat = pd.concat(dfs, ignore_index=True, copy=False)
-    logger.info(f"🧩 {len(dfs)} file(s) loaded and concatenated → shape: {df_concat.shape}")
+    df_concat = pd.concat(dfs, ignore_index=True)
+    logger.info(
+        f"🧩 {len(dfs)} file(s) loaded and concatenated → shape: {df_concat.shape}"
+    )
     return df_concat

@@ -50,7 +50,6 @@ def test_cleaning_pipeline_country_variants():
     for raw, expected in tests.items():
         result = cleaning_pipeline(
             Animal="A",
-            Date="2024-01-01",
             Country=raw,
             Weight_kg=1,
             Length_cm=10,
@@ -58,14 +57,13 @@ def test_cleaning_pipeline_country_variants():
             Latitude=1,
             Longitude=1,
         )
-        assert result is not None 
+        assert result is not None
         assert result["Country"] == expected
 
 
 def test_cleaning_pipeline_invalid_types():
     result = cleaning_pipeline(
         Animal=123,
-        Date=987,
         Country=True,
         Weight_kg="INVALID",
         Length_cm="BAD",
@@ -74,7 +72,7 @@ def test_cleaning_pipeline_invalid_types():
         Longitude=[],
     )
 
-    assert result is not None 
+    assert result is not None
     assert result["Animal"] is None
     assert result["Country"] is None
     assert result["Weight_kg"] is None
@@ -86,8 +84,7 @@ def test_cleaning_pipeline_invalid_types():
 
 def test_cleaning_pipeline_partial_values():
     result = cleaning_pipeline(
-        Animal="Bisson",   # test du remplacement bisson → bison
-        Date="2024/01/02",
+        Animal="Bisson",  # test du remplacement bisson → bison
         Country=None,
         Weight_kg=5,
         Length_cm=None,
@@ -95,25 +92,26 @@ def test_cleaning_pipeline_partial_values():
         Latitude=50.2,
         Longitude=None,
     )
-    assert result is not None 
+    assert result is not None
     assert result["Animal"] == "Bison"
-    assert result["Date"] == parse_date("2024/01/02")
+
     assert result["Latitude"] == 50.2
 
 
 def test_afficher_statistiques_full_branch(mocker):
     logger = mocker.MagicMock()
 
-    df = pd.DataFrame({
-        "Animal": [None],
-        "Country": [None],
-        "Weight_kg": [None],
-        "Length": [None],
-        "Date": [None],
-        "Gender": [None],
-        "Longitude": [None],
-        "Latitude": [None],
-    })
+    df = pd.DataFrame(
+        {
+            "Animal": [None],
+            "Country": [None],
+            "Weight_kg": [None],
+            "Length": [None],
+            "Gender": [None],
+            "Longitude": [None],
+            "Latitude": [None],
+        }
+    )
 
     afficher_statistiques(df, logger=logger)
     assert logger.info.call_count >= 8

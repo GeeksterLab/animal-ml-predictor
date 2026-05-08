@@ -20,11 +20,13 @@ from scripts.cleaning import (
     clean_dataset_base,
     cleaning_pipeline,
 )
-from utils.data_utils import parse_date
+
+# from utils.data_utils import parse_date
 
 # ==========================================================
 # 🔎 TEST _normalize_string
 # ==========================================================
+
 
 def test_normalize_string_basic():
     assert _normalize_string("  HéLLô  ") == "héllô"
@@ -35,22 +37,25 @@ def test_normalize_string_removes_symbols():
 
 
 def test_normalize_string_non_str_return_none():
-    assert _normalize_string(123) is None
-    assert _normalize_string(None) is None
+    assert _normalize_string(123) is None  # type: ignore
+    assert _normalize_string(None) is None  # type: ignore
 
 
 # ==========================================================
 # 🔎 TEST clean_dataset_base
 # ==========================================================
 
+
 def test_clean_dataset_base_drops_and_renames():
-    df = pd.DataFrame({
-        "Animal_type": ["A"],
-        "Animal_code": [1],
-        "Body_Length_cm": [100],
-        "Animal_name": ["Zelda"],
-        "Data_compiled_by": ["Me"]
-    })
+    df = pd.DataFrame(
+        {
+            "Animal_type": ["A"],
+            "Animal_code": [1],
+            "Body_Length_cm": [100],
+            "Animal_name": ["Zelda"],
+            "Data_compiled_by": ["Me"],
+        }
+    )
 
     cleaned = clean_dataset_base(df)
 
@@ -66,10 +71,10 @@ def test_clean_dataset_base_drops_and_renames():
 # 🔎 TEST cleaning_pipeline
 # ==========================================================
 
+
 def test_cleaning_pipeline_valid_row():
     row = dict(
         Animal="squirrell™",
-        Date="2024-01-02",
         Country="pl",
         Weight_kg=2.5,
         Length_cm=30,
@@ -79,7 +84,7 @@ def test_cleaning_pipeline_valid_row():
     )
 
     result = cleaning_pipeline(**row)
-    assert result is not None 
+    assert result is not None
     assert result["Animal"] == "Squirrel"
     assert result["Country"] == "Poland"
     assert result["Weight_kg"] == 2.5
@@ -87,22 +92,24 @@ def test_cleaning_pipeline_valid_row():
     assert result["Gender"] == "Female"
     assert result["Latitude"] == 10.0
     assert result["Longitude"] == 20.0
-    assert result["Date"] == parse_date("2024-01-02")
 
 
 def test_cleaning_pipeline_all_nan_returns_none():
     result = cleaning_pipeline(
-        Animal=None, Date=None, Country=None,
-        Weight_kg=None, Length_cm=None, Gender=None,
-        Latitude=None, Longitude=None
+        Animal=None,
+        Country=None,
+        Weight_kg=None,
+        Length_cm=None,
+        Gender=None,
+        Latitude=None,
+        Longitude=None,
     )
     assert result is None
 
 
 def test_cleaning_pipeline_fix_common_typos():
     row = dict(
-        Animal="ledgheod",  
-        Date="2023-02-10",
+        Animal="ledgheod",
         Country="hu",
         Weight_kg=1.2,
         Length_cm=15,
@@ -112,7 +119,7 @@ def test_cleaning_pipeline_fix_common_typos():
     )
 
     result = cleaning_pipeline(**row)
-    assert result is not None 
+    assert result is not None
     assert result["Animal"] == "Hedgehog"
     assert result["Country"] == "Hungary"
 
@@ -121,19 +128,21 @@ def test_cleaning_pipeline_fix_common_typos():
 # 🔎 TEST afficher_statistiques (mock logging)
 # ==========================================================
 
+
 def test_afficher_statistiques_logs(mocker):
     logger = mocker.MagicMock()
 
-    df = pd.DataFrame({
-        "Animal": ["A", None],
-        "Country": ["X", None],
-        "Weight_kg": [1.0, None],
-        "Length": [10, None],
-        "Date": ["2024-01-01", None],
-        "Gender": ["F", None],
-        "Longitude": [1.0, None],
-        "Latitude": [2.0, None],
-    })
+    df = pd.DataFrame(
+        {
+            "Animal": ["A", None],
+            "Country": ["X", None],
+            "Weight_kg": [1.0, None],
+            "Length": [10, None],
+            "Gender": ["F", None],
+            "Longitude": [1.0, None],
+            "Latitude": [2.0, None],
+        }
+    )
 
     afficher_statistiques(df, logger=logger)
 
