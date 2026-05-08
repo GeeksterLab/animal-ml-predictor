@@ -1,8 +1,14 @@
+import os
+import pytest
+import pandas as pd
+import joblib
+
 from pathlib import Path
-
 from streamlit.testing.v1 import AppTest
+from utils.config_utils import DEFAULT_MAIN_DATASET
+from utils.config_utils import GB_DIR
 
-APP_PATH = Path(__file__).resolve().parents[1] / "app" / "app.py"
+APP_PATH = Path(__file__).resolve().parents[2] / "app" / "app.py"
 
 
 def test_page_project_loads():
@@ -10,11 +16,15 @@ def test_page_project_loads():
     app.run(timeout=20)
 
     assert not app.exception
-    assert "Animal Morphology Lab" in app.markdown[0].value
+    assert any(
+        "Animal Morphology Lab" in element.value
+        for element in [*app.header, *app.markdown]
+    )
 
 
 def test_page_data_exploration_loads():
     app = AppTest.from_file(str(APP_PATH))
+    app.run(timeout=30)
     app.radio[0].set_value(":material/search: Data Exploration")
     app.run(timeout=30)
 
@@ -26,6 +36,7 @@ def test_page_data_exploration_loads():
 
 def test_page_data_analysis_loads():
     app = AppTest.from_file(str(APP_PATH))
+    app.run(timeout=30)
     app.radio[0].set_value(":material/scatter_plot: Data Analysis")
     app.run(timeout=30)
 
@@ -35,6 +46,7 @@ def test_page_data_analysis_loads():
 
 def test_page_modeling_prediction_loads():
     app = AppTest.from_file(str(APP_PATH))
+    app.run(timeout=30)
     app.radio[0].set_value(":material/psychology: Modeling & Prediction")
     app.run(timeout=40)
 
@@ -45,6 +57,7 @@ def test_page_modeling_prediction_loads():
 
 def test_prediction_button_does_not_crash():
     app = AppTest.from_file(str(APP_PATH))
+    app.run(timeout=30)
     app.radio[0].set_value(":material/psychology: Modeling & Prediction")
     app.run(timeout=40)
 
@@ -61,9 +74,6 @@ def test_prediction_button_does_not_crash():
 
 
 def test_clean_dataset_structure():
-    import pandas as pd
-    from utils.config_utils import DEFAULT_MAIN_DATASET
-
     df = pd.read_csv(DEFAULT_MAIN_DATASET)
 
     expected_cols = [
@@ -83,8 +93,6 @@ def test_clean_dataset_structure():
 
 
 def test_models_load():
-    from utils.config_utils import GB_DIR
-    import joblib
 
     model_files = list(GB_DIR.glob("*.pkl"))
 
@@ -96,10 +104,6 @@ def test_models_load():
 
 
 def test_prediction_output():
-    import pandas as pd
-    import joblib
-    from utils.config_utils import GB_DIR
-
     model = joblib.load(GB_DIR / "gradient_boosting_weight_european_bison.pkl")
 
     X = pd.DataFrame([{"Length_cm": 300}])
@@ -111,9 +115,6 @@ def test_prediction_output():
 
 
 def test_species_list_not_empty():
-    import pandas as pd
-    from utils.config_utils import DEFAULT_MAIN_DATASET
-
     df = pd.read_csv(DEFAULT_MAIN_DATASET)
 
     species_list = df["Animal"].dropna().unique()
@@ -141,8 +142,6 @@ def test_expected_gradient_boosting_models_exist():
 
 
 def test_expected_gradient_boosting_models_load():
-    import joblib
-    from utils.config_utils import GB_DIR
 
     expected_models = [
         "gradient_boosting_length_european_bison.pkl",
